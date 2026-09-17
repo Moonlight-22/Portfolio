@@ -1,0 +1,439 @@
+0000|Normal| 
+0001|Normal|
+0002|Normal|Student Name: Htet Eaindra Aung
+0003|Normal|
+0004|Normal|Student Number: 2631547
+0005|Normal|
+0006|Normal|Module Code: 6CS007
+0007|Normal|
+0008|Normal|Module Name:  Project and Professionalism
+0009|Normal|
+0010|Normal|Project Title: Smart Patient Portal & Appointment Management System
+0011|Normal|
+0012|Normal|Module Leader Name: Alix Bergeret
+0013|Normal|
+0014|Normal|Supervisor Name: Dr. Myat Mon Aye 
+0015|Normal|
+0016|Normal|Reader Name: Dr. Phyu Thwel
+0017|Normal|
+0018|Normal|Submission Date: 17.8.2026
+0019|Normal|(The date you handed in the assessment)
+0020|Normal|
+0021|Normal|Award Title: Computer Science
+0022|Normal|(Award Title for your project, if in doubt refer to your course/Module Registration)
+0023|Heading 1|
+0024|Normal|
+0025|Title|
+0026|Heading 1|Declaration Sheet
+0027|Heading 1|
+
+0028|Normal|Presented in partial fulfilment of the assessment requirements for the above award.
+0029|Normal|
+0030|Normal|This work or any part thereof has not previously been presented in any form to the University or to any other institutional body whether for assessment or for other purposes. Save for any express acknowledgements, references and/or bibliographies cited in the work. I confirm that the intellectual contents of the work are the result of my own efforts and of no other person.
+0031|Normal|
+0032|Normal|It is acknowledged that the author of any project work shall own the copyright.  However, by submitting such copyright work for assessment, the author grants to the University a perpetual royalty-free licence to do all or any of those things referred to in section 16(i) of the Copyright Designs and Patents Act 1988.  (viz: to copy work; to issue copies to the public; to perform or show or play the work in public; to broadcast the work or to make an adaptation of the work).
+0033|Normal|
+
+0034|Normal|Student Name (Print): Htet Eaindra Aung
+0035|Normal|
+0036|Normal|Student Number: 2631547
+0037|Normal|
+
+0038|Normal| Signature: ……………Eaindra………………………..…….        Date: …17/8/2026………
+0039|Normal|(Must include the unedited statement above. Sign and date)
+0040|Normal|
+0041|Normal|Please use an electronic signature (scan and insert)
+0042|Normal|
+0043|Normal|
+0044|Heading 1|Abstract
+0045|Normal|
+0046|Normal|Despite the modernization of the healthcare sector, the appointment scheduling for local clinics remains largely manual, with most of them using phones to register patients and having to deal with walk-in queues, which not only creates inefficiency but also makes the access to clinics difficult for patients. This project is a comprehensive Digital Appointment Management System built with a full-stack application, using Next.js for the Web Dashboard, React Native for the mobile App, NestJS RESTful backend, and PostgreSQL relational database, supporting both clinical staff and administrators.
+0047|Normal|
+0048|Normal|The research question for this project is: How effective is a digital booking system in enhancing the availability of medical checkup packages for local clinics and patients? The implementation of the system, literature review, and system design and empirical evaluation using a structured user survey shows that the digital booking system can make it much more convenient for patients, shorten their perceived waiting time, and make clinic management more efficient.
+0049|Normal|
+0050|Normal|The system is designed with a three-tier architecture, integrates JWT based authentication, RESTful APIs and soft-delete data management to satisfy both functional requirements and legal obligation of data protection under GDPR. Overall, user feedback through the survey scored high satisfaction in the areas of convenience, accessibility, security and digital booking experience. The project finds that digital scheduling systems are a significant improvement over current scheduling techniques and could be improved further by using predictive scheduling algorithms and extending their use to larger contexts.
+0051|Normal|
+0052|Normal|
+0053|Heading 1|Chapter 1: Introduction
+0054|Heading 2|Background of the Project
+0055|Normal|Clinical operations are one of the primary tasks that are performed in a healthcare organization. In most developed and developing countries manual scheduling (walking and talking) is still a primary method of scheduling in small and local clinics. The following methods are clearly inefficient, causing conflicts in schedules, long waiting times of patients, administrative costs and eventually, impacting on the quality of the care provided to patients (Humaid and Ghazali, 2022).
+0056|Normal|The increasing digitalization of the healthcare industry has presented the chance to completely reimagine the patient booking process. In academic studies, mobile apps have been demonstrated to cut down waiting times, enhance patient satisfaction and improve administrative efficiency in clinical environments (Nanteza, 2025; Azhari and Nor, 2023). In small community-based clinics, however, these systems have not yet been developed and there is a definite need to be filled by this project.
+0057|Normal|
+0058|Heading 2|Academic Question
+0059|Normal|To what extent does a digital booking platform improve the accessibility of medical checkup packages for local clinics and patients?
+0060|Normal|This question underpins the entire research and development effort, providing a focal point for both the literature review and the evaluation of the artefact produced.
+0061|Heading 2|
+0062|Heading 2|Aims and Objectives
+0063|Heading 3|Aims 
+0064|Normal|
+0065|List Paragraph|To increase the availability of and convenience for patients when scheduling appointments digitally.
+0066|List Paragraph|To minimize access needs to local health care providers.
+0067|List Paragraph|To measure the impact of the digital booking platform on patients' access to medical checkup appointments.
+0068|Heading 3|Objectives
+0069|Normal|
+0070|List Paragraph|Develop a mobile-based digital booking system that allows the patients to view and book available medical checkup packages.
+0071|List Paragraph|Develop a web-based dashboard for doctors or clinic staff to view and manage appointments and schedules in real time.
+0072|List Paragraph|Create and host a secure Web Server Development Backend using NestJS RESTful API with JWT authentication to connect the mobile and Web Clients with PostgreSQL Database.
+0073|List Paragraph|Obtain user feedback using an organized survey to assess the effectiveness, usability and patient satisfaction of the system.
+0074|List Paragraph|Critically assess the effect of the system on the access to health care and make conclusions for the academic question.
+0075|Heading 2|Overview of the Artefact
+0076|List Paragraph|The main artefact created in this project is a fully developed clinic scheduling system that includes three integrated parts: 
+0077|List Paragraph|React Native (Expo) mobile app for patients to browse, book, remind and manage appointments. 
+0078|List Paragraph|Next.js Web Dashboard for clinic administrators and doctors, where they can manage their schedules, monitor appointments, and oversee medical packages. 
+0079|List Paragraph|A secure, structured backend API layer built with NestJS and integrated with a PostgreSQL database, offering data management for both client applications.
+0080|Normal|Examples of supporting artefacts: detailed system design (use cases, class diagrams, ER diagrams, sequence diagrams and activity diagrams), wireframe designs, a test plan with test cases, and patient feedback survey and results.
+0081|Normal|
+0082|Heading 2|Research Methods
+0083|Normal|The methodology used for this project is mixed-methods research. The literature review involves the review of peer-reviewed academic papers, conference papers, technical dissertations, etc., to create the theoretical foundations of digital healthcare scheduling systems. Primary research is carried out as the artefact is developed and deployed, and via a structured user survey via Google Forms to gather quantitative and qualitative feedback from users and testers of the artefact in clinics. An iterative development cycle is used to design, implement and test the artefact following the Agile methodology.
+0084|Normal|
+0085|Heading 2|Scope and Limitations 
+0086|Normal|The scope of the project is limited to one local clinic context and not includes integration with national healthcare records systems or insurance processing. The user study is not a large-scale population-based study, but is a small group of testers and clinic contacts. The system has been designed for production use in architecture, but is now deployed as a clinical prototype not a live clinical service. In the literature, it has been identified that the "predictive scheduling" of the machine learning field is a direction of great potential but is not discussed in this iteration.
+0087|Normal|
+0088|Heading 2|Report Structure
+0089|Normal|This report is organized as follows. Chapter 2 provides the Literature Review where the existing research related to Digital Healthcare Appointment system has been evaluated. The Artefact Design and Architecture is detailed in Chapter 3. Development and Implementation are discussed in Chapter 4. Testing and Evaluation is detailed in Chapter 5. The results are discussed in the light of the academic question in Chapter 6. Chapter 7 provides Conclusions. Chapter 8 is a Critical Evaluation and Self-Reflection. Chapter 9 presents Evidence of Project Management. The report is followed by references and appendices.
+0090|Normal|
+0091|Heading 3|
+0092|Heading 1|Chapter 2: Literature Review
+0093|Heading 2|2.1 Introduction to Digital Healthcare Appointment Systems
+0094|Normal|Over the last ten years, healthcare administration has increasingly been studied digitally, with a special interest in the appointment scheduling process as a critical operational area. The inefficiency and poor patient satisfaction with traditional systems using telephone registration, in-person walk-in registration and paper records etc. are widely documented (Humaid and Ghazali, 2022). This digitalization, via web-based booking portals, mobile apps and automated notification systems, has garnered significant academic interest as a way to boost patient satisfaction and streamline the processes of healthcare providers.
+0095|Normal|This literature review critically analyzes some of the main research in this field, exploring what has been found concerning the positive, as well as the negative, aspects of digital appointment systems, the role of mobile or web technologies, the importance of security and authentication, and the new role of algorithmic scheduling. The review will help to identify the gap in the research that this project will be addressing.
+0096|Normal|
+0097|Heading 2|2.2 Limitations of Traditional Appointment Systems
+0098|Normal|It is well known in the literature that the fundamental problem that is tackled in this project is present. Humaid and Ghazali (2022) give a comprehensive study of the challenges of the manual booking mechanism in the medical clinic environment. Their research shows that time and costs are important for patients when they book a test using physical and telephone channels especially in geographically remote and time limited situations. They saw a significant improvement in patient convenience and clinic volume by using their online booking system.
+0099|Normal|Azhari and Nor(2023), continue this research and work on authentication and secure management of calendar in digital clinic appointment system. The have excellent effects for the dual needs of efficiency and security in health care settings. They report that systems with powerful authentication methods achieve greater patient trust and improve the reliability of patient management results. The results are directly relevant to the design decisions that were taken in this project, particularly for the decision to use JWT-based authentication.
+0100|Normal|The study carried out at Makerere University by Nanteza (2025) expands the geographies under consideration in this evidence base to show that manual appointment scheduling is not a problem only in high income context of healthcare. The double booking, communication and scheduling inefficiencies were found to be common issues in the studied institution. However, it was decided that digital booking systems could be used to solve these problems to a large degree, giving weight to the question of whether or not this project would be necessary in a local clinic setting.
+0101|Normal|
+0102|Heading 2|
+0103|Heading 2|2.3 Mobile Healthcare Applications
+0104|Normal|One of the most recent areas of study focuses on what role mobile apps play in improving a patient's access to healthcare. The studies on Android-based healthcare apps highlight how they improve patient engagement by allowing for the on-demand scheduling of appointments, sending notifications and communication with healthcare providers (1SAFINAAZ, 2026). The fact that booking functions are provided 24/7 is designated as of special importance where the working hours of clinics restrict the availability of traditional booking functions.
+0105|Normal|Jalleh (2022) has carried out a comprehensive study on mobile hospital appointment system with QR-based check-in, real-time queue tracking and automated appointment reminders and the research work is from University Tunku Abdul Rahman (UTAR). The results demonstrate that if these functionalities are performed well, they can lead to tangible reductions in patient waiting times and increased satisfaction with the appointment experience from the patient’s perspective. This study will be valuable as a design precedent for the mobile application aspect of the current project, which includes the use of appointment notifications and live status updates.
+0106|Heading 2|2.4 Web-Based Systems and Administrative Efficiency
+0107|Normal|Hospital (2026) determined that web based hospital registration and scheduling system has been shown to increase the effectiveness of administration because of the elimination of the scheduling issue, real time access to data and better resource tracking. Online platforms make administrative workloads and manual record keeping easy and give clinical managers an up-to-the-minute overview of capacity and patient flow.
+0108|Normal|IEEE Kosalairaman et al. (2025) demonstrate the advantages of smart healthcare appointment systems in the institutional level with real-time data and communication technologies. The results of the project support the idea of having a tight coupling between the patient-facing and the administrator-facing parts of the system, both sharing the same data layer, as in the current project’s NestJS and PostgreSQL backend.
+0109|Heading 2|2.5 Communication Technologies in Healthcare Scheduling 
+0110|Normal|One of the interesting aspects of the literature is the development of communication channels for the purposes of appointment management. Alanazy (n.d.) explores how WhatsApp can be used as a communication and bookings platform for patients and health care providers. The results show increased efficiency in communicating and coordinating tasks; however, there are limitations in data structure, searchability and integration with formal health care records systems. The project in question takes a purpose-built approach to achieve the communication aspects of the platforms using automated push notifications, while retaining the data integrity and security of a formal application.
+0111|Heading 2|2.6 Patient Satisfaction and Adoption Barriers
+0112|Normal|This positive effect of digital appointments on patient satisfaction has been a constant theme throughout the literature. Warif (2023) after the implementation of the system reported large shifts towards digital booking in hospital contexts with reductions in waiting times and improvements in service quality ratings. In addition to that, the study exposes challenges to adoption such as lack of technical expertise, volatility in internet connectivity and awareness of users. The results are of particular relevance to the design of the existing system, especially with regards to the mobile interface (which needs to be clean and user friendly) and the booking process itself (which needs to be simple from a user's point of view).
+0113|Normal|Ming-Sheng Lee et al. (2020) draws on the Unified Theory of Acceptance and Use of Technology (UTAUT) and the information system quality models to conclude that high adoption rates in digital health systems are achieved primarily by user-friendliness, real-time scheduling and security of data management. The current project is directly influenced by this piece of evidence.
+0114|Normal|
+0115|Heading 2|2.7 Algorithmic and Predictive Scheduling 
+0116|Normal|The literature in the field of algorithmic or machine learning approaches to healthcare scheduling is still growing, albeit not as wide-ranging as in other fields. In this context, the literature on the use of machine learning for medical appointment scheduling is very useful and critically considers possible algorithmic bias, such as that of Samorani et al. (2021). The IEEE article by Kosalairaman et al. (2025) also discusses how data-driven scheduling can be used to make dynamic scheduling decisions from historical data on consultation time.
+0117|Normal|The present project is of the goal to find the best way to schedule doctor consultations which means that the project’s design dream is to learn from the past booking times of doctors and to best adapt the intervals for booking consultations. This feature is not quite in place yet in this project, but its logical extension would be to further develop this project and is incorporated into this new literature.
+0118|Heading 2|2.8 Research Gap 
+0119|Normal|Key findings from the literature reviewed include: digital booking of appointments has positive effects on patient access and convenience; mobile apps are potentially more effective in terms of patient engagement; there is a disconnect between technology that is available and seems to be adopted locally/community level in clinics; and patient identification and access to real-time data are essential.
+0120|Normal|The majority of current systems (including those reviewed in the literature) are geared toward a simple Web-based booking application or a large hospital setting. The available research that is specific to integrated multi-platform systems for small local clinics that have an integrated patient mobile application, clinician web dashboard, and secure API layer in one environment is still limited. This is the main reason for the present project.
+0121|Heading 2|
+0122|Heading 2|
+0123|Heading 2|2.9 Summary
+0124|Normal|The current project is a continuation of this literature review, which has created the evidence base for the project. There are well known shortcomings of conventional appointment systems. There is clear evidence that digital platforms, whether on the web or mobile, enhance accessibility for patients and clinic productivity. Security, usability and real-time functionality are critical design requirements. This project's main contribution is the development of an integrated, local-clinic focused digital scheduling system, which is supported by the research gap identified.
+0125|Normal|
+0126|Normal|
+0127|Normal|
+0128|Normal|
+0129|Heading 2|
+0130|Heading 1|Chapter 3: Artefact Design and Architecture 
+0131|Heading 2|3.1 System Overview 
+0132|Normal|Smart Patient Portal and Appointment Management System is a complete digital healthcare solution that caters 3 types of users patients, doctors and administrators. The system is im
+0133|Normal|This architectural style is consistent with the literature's patterns of most successful systems in this class, which are also the most successful in the health sector (Kosalairama
+0135|Heading 2|3.2 System Architecture 
+0136|Normal|The structure of the system is divided into three levels - the Expo React Native mobile application is for the patient and the Next.js web dashboard is for clinic administrators an
+0137|Normal|The back end built with NestJS offers several user-friendly RESTful API endpoints such as patient management, appointment booking, doctor profile management, medical package manage
+0138|Normal|PostgreSQL is a relational database to store data. The database schema includes all core entities, while also having a soft-delete mechanism (deletedAt timestamps) present in all m
+0140|Heading 2|3.3 Technology Stack Justification 
+0142|Heading 2|3.4 Database Design – Entity Relation Model 
+0144|Caption|Figure 1: ERD diagram
+0145|Normal|The Entity Relationship Diagram (ERD) for the Smart Patient Portal and Appointment Management System is shown below in Figure 1. There are several major entities in the database: U
+0146|Heading 2|3.5 Use Case Design
+0148|Caption|Figure 2: Overall Use case Diagram
+0149|Normal|This diagram shows the overall use case diagram of the Smart Patient Portal and Appointment Management System. There are three actors in the system, Patient, Doctor and Administrat
+0150|Normal|The Patient can register, log-in, view medical packages and doctors, book and cancel appointments, view appointments details, and receive appointments reminders.
+0151|Normal|The Doctor can log in, check appointments, access patient information, medications and more, and modify her or his availability for appointments.
+0152|Normal|The Administrator has the ability to log in and configure users, doctors, medical packages and appointments. The administrator can also see reports to keep a track of the clinic's 
+0153|Normal|In general, Use Case diagram shows the primary functions of the system and the separation of access by the three user roles. This role-based structure ensures that the functions ca
+0155|Caption|Figure 3: Admin Use case diagram
+0157|Caption|Figure 4: Doctor Use case diagram
+0161|Caption|Figure 5: Patient Use case diagram
+0165|Heading 2|3.6 Flow Chart Diagram
+0167|Caption|Figure 6: Flow Chart Diagram
+0168|Normal|The following flowchart illustrates the process of user journey in booking a medical consultation starting from when a patient logs in and begins to view medical packages. The pati
+0169|Heading 2|3.7 Activity Diagram
+0171|Caption|Figure 7: Activity Diagram
+0172|Normal|This diagram displays the overall flow through of a booked appointment that starts when the user books an appointment and looks into their appointment list. When the system reaches
+0173|Heading 2|3.8 Security and GDPR Compliance Design
+0174|Normal|Security and legal compliance are integrated from the beginning in the system architecture, both for the compliance with the BCS Code of Conduct and the GDPR obligations concerning
+0175|List Paragraph|All API endpoints are secured by JWT authentication and have expiration and refresh cycles.
+0176|List Paragraph|All the major entities have soft deleted in use, meaning data is deleted and has At timestamps which support GDPR right to erasure whilst maintaining data audit integrity.
+Minimisa
+0177|List Paragraph|The presentation layer is separated from the database. The hackers cannot directly access PostgreSQL, the only ones that can access them are the client apps through the NestJS API,
+0178|List Paragraph|The project does not keep any Personally Identifiable Information (PII) in the academic documentation or survey results.
+0180|Heading 2|3.9 UI/UX Design – Wireframes
+0181|Normal|Before implementing, wireframes for both the mobile app and web dashboard were created. The mobile application wireframes include the patient home screen, package browsing, appoint
+0182|Normal|Clean navigation, low cognitive load in the booking process, and visual voice feedback at every phase of the booking process (Lee et al., 2020) were used to guide design decisions.
+0205|Caption|Figure 16:Wireframe of User ( Mobile App )
+0208|Caption|Figure 17: Wireframe of Admin Dashboard
+0210|Caption|Figure 18: Wireframe of Admin Dashboard
+0212|Caption|Figure 19: Wireframe of Admin Dashboard
+0214|Caption|Figure 20: Wireframe of Admin Dashboard
+0216|Caption|Figure 21: Wireframe of Admin Dashboard
+0218|Caption|Figure 22: Wireframe of Admin Dashboard
+0220|Caption|Figure 23: Wireframe of Admin Dashboard
+0222|Caption|Figure 24: Wireframe of Admin Dashboard
+0224|Caption|Figure 25: Wireframe of Admin Dashboard
+0226|Caption|Figure 26: Wireframe of Admin Dashboard
+0228|Caption|Figure 27: Wireframe of Admin Dashboard
+0230|Caption|Figure 28: Wireframe of Admin Dashboard
+0232|Caption|Figure 29: Wireframe of Admin Dashboard
+0234|Caption|Figure 30: Wireframe of Admin Dashboard
+0236|Caption|Figure 31: Wireframe of Admin Dashboard
+0238|Caption|Figure 32: Wireframe of Admin Dashboard
+0240|Caption|Figure 33: Wireframe of Admin Dashboard
+0242|Caption|Figure 34: Wireframe of Admin Dashboard
+0244|Caption|Figure 35: Wireframe of Admin Dashboard
+0246|Caption|Figure 36: Wireframe of Doctor Dashboard
+0248|Caption|Figure 37: Wireframe of Doctor Dashboard
+0250|Caption|Figure 38: Wireframe of Doctor Dashboard
+0252|Caption|Figure 39: Wireframe of Doctor Dashboard
+0254|Caption|Figure 40: Wireframe of Doctor Dashboard
+0256|Caption|Figure 41: Wireframe of Doctor Dashboard
+0258|Caption|Figure 42: Wireframe of Doctor Dashboard
+0260|Caption|Figure 43: Wireframe of Doctor Dashboard
+0262|Caption|Figure 44: Wireframe of Doctor Dashboard
+0264|Caption|Figure 45: Wireframe of Doctor Dashboard
+0266|Heading 1|Chapter 4: Development and Implementation
+0267|Heading 2|4.1 Development Methodology 
+0268|Normal|The project to create the Smart Patient Portal and Appointment Management System was an iterative process, guided by the Agile methodology, organized into four project milestones s
+0269|Normal|The methodology used was chosen purposely as an iterative one requirement are often dynamic in healthcare systems, and as the implications of the design decisions become explicit i
+0271|Heading 2|4.2 Development Environment and Repository Structure 
+0272|Normal|The code is maintained on two GitHub repositories - 
+0273|Normal|Available at the following link: https://github.com/htethtet2001/Frontend-.git (Next.js web dashboard)
+Mobile Repository: https://github.com/htethtet2001/mobile.git (Expo React Nat
+0274|Normal|
+ 	There is another separate backend application built with NestJS that is responsible for linking the two client applications to the shared PostgreSQL database instance.
+0276|Heading 2|4.3 Backend Implementation – NestJS API
+0277|Normal|The back-end service is created in NestJS, a progressive NodeJS framework, using TypeScript. NestJS modular structure allowed for creating separate service modules per domain area 
+0278|List Paragraph|Use TypeScript across the entire back-end codebase, including the ability to have static typing, compile-time error detection, and code maintainability.
+0279|List Paragraph|JWT based authentication middleware used as a guard over all protected end points, role-based access control for patient, doctor and admin.
+0280|List Paragraph|Commonly followed RESTful API conventions throughout (e.g. using appropriate HTTP verbs GET, POST, PUT, DELETE) and standard response codes.
+0281|List Paragraph|Input validation with NestJS class-validator decorators to ensure the data is not malformed or malicious.
+0282|List Paragraph|Soft-delete implementation with the deletedAt mechanism from TypeORM, for GDPR compliant account management without destroying data for good measure.
+0283|Heading 2|4.4 Database Implementation – PostgreSQL
+0284|Normal|The NestJS application implements the PostgreSQL database schema using TypeORM as the Object-Relational Mapper (ORM), providing type-safe interactions with the database. Schema evo
+0285|Normal|A relational database was chosen intentionally because its structure and interconnectedness are appropriate to the needs of appointment, patient, doctor and scheduling data, and pr
+0287|Heading 2|4.5 Mobile Application Implementation – Expo React Native
+0288|Normal|The mobile app is built on Expo and React Native with Android as the primary platform, specifically for use by patients. Written in TypeScript with React Navigation for easy screen
+0289|Normal|Key patient facing features that have been put in place are 
+0290|List Paragraph|Users sign up and log in using JWT authentication.
+0291|List Paragraph|Every medical package is available for browsing, and accompanied with detailed description and pricing.
+0292|List Paragraph|This feature allows users to view the doctor's availability and schedules. Users can view doctor' availability and schedules.
+0293|List Paragraph|Arrangements for appointments with a time and date selection
+0294|List Paragraph|Allows users to view booking confirmations and history of appointments. Users can view booking confirmations and booking history.
+0295|List Paragraph|Push notification for appointment reminder 
+0296|List Paragraph|Profile & Account Management
+0298|Heading 2|4.6 Web Dashboard Implementation – Next.js
+0299|Normal|We build the administrative and clinical web dashboard using Next.js, a server-rendered React application optimized for performance and SEO. It provides an overview of the appointm
+0300|Normal|The web dashboard offers many features such as 
+0301|List Paragraph|Using JWT session management for admin and doctor’s login.4.7 Not
+0302|List Paragraph|Real-time appointment calendar displaying daily, weekly and monthly views
+0303|List Paragraph|Access to patient history and profile using patient management screen.
+0304|List Paragraph|Medical package conuration, creation, pricing, and toggle on/off medical packages as well as medical package availability
+0305|List Paragraph|The ability to manage doctor profiles and set up their schedules and templates.
+0306|List Paragraph|Booking Analytics Dashboard – Appointment Volume & Utilization Metrics
+0308|Heading 2|4.7 Notification System
+0309|Normal|The message is sent to the user through the automatic appointment reminder sent through the NestJS notification system. Notifications are created when the booking is confirmed and 
+0311|Heading 2|4.8 Challenges and Solutions
+0317|Heading 1|Chapter 5: Testing and Evaluation
+0318|Heading 2|5.1 Testing Strategy 
+0319|Normal|Testing was undertaken at several stages during the development, including the validation of the design artefact, functional system testing, and user experience. The testing strate
+0321|Heading 2|5.2 Design Artefact Testing 
+0323|Heading 2|5.3 Functional Test Cases
+0324|Heading 2|
+0327|Caption|Figure 46
+0329|Caption|Figure 47
+0331|Caption|Figure 48
+0333|Caption|Figure 49
+0335|Caption|Figure 50
+0337|Caption|Figure 51
+0339|Caption|Figure 52
+0341|Caption|Figure 53
+0343|Caption|Figure 54
+0345|Caption|Figure 55
+0347|Caption|Figure 56
+0349|Caption|Figure 57
+0351|Caption|Figure 58
+0353|Caption|Figure 59
+0355|Caption|Figure 60
+0357|Caption|Figure 61
+0359|Caption|Figure 62
+0361|Caption|Figure 63
+0363|Heading 2|5.4 User Survey Evaluation
+0364|Normal|The system usability and effectiveness were assessed through a structured user survey using Google Forms for quantitative and qualitative feedback was gathered from the system test
+0366|Heading 3|5.4.1. Key Survey Findings
+0368|Normal|Survey results showed high levels of positive results on all dimensions measured.
+0369|Normal|Accessibility and Convenience - Most respondents indicated that the mobile application facilitated easy viewing and booking of the medical checkup packages with high agreement scor
+0370|Normal|For those who have previously used manual booking, respondents indicated that they saw fewer waiting times and more predictable booking after implementation of the digital platform
+0371|Normal|Automated Reminders - The automated reminder feature was rated highly by all respondents; most agreed reminders helped them get to appointments on time.
+0372|Normal|Responsive and professional mobile application user interface was scored as "Interface Quality" by most of the respondents.
+0373|Normal|Security - The majority of respondents were satisfied that their personal data was safely managed and the login and authentication system was secure but still easy to use.
+0374|Normal|Net Promoter Score - Most respondents stated that they were very likely (Score 8-10 out of 10) to recommend the digital booking system to others.
+0375|Normal|Technical Issues - The most frequently reported issue was slow load times, though there were no reports of crashes or errors in the application during the evaluation period.
+0376|Heading 3|5.4.2 Qualitative Feedback
+0378|Normal|Open-ended survey questions elicited comments from participants about the most useful feature as well as about improvements. The most useful aspects of the system, as reported by t
+0382|Heading 1|Chapter 6: Addressing the Academic Question 
+0383|Heading 2|6.1 Revisiting the Academic Question
+0384|Normal|The academic question of the project is “To what extent can a Digital Booking Platform enhance the accessibility of medical checkup packages for local clinics and patients?”.
+0385|Normal|The evidence from the literature review, design and implementation of the artefact and the user survey is summarized in this chapter and used to develop a well-evidenced answer to 
+0387|Heading 2|6.2 Evidence from the Literature
+0388|Normal|As discussed in Chapter 2, the review of the literature was sufficient to complete that digital bookings systems offer significant benefits in terms of patient access and clinic ef
+0389|Normal|According to Lee et al. (2020), conditions for the best use of digital platforms have been also identified in the literature, including an easy-to-use interface design, real-time s
+0391|Heading 2|6.3 Evidence from the Artefact
+0392|Normal|The system implemented directly implements the accessibility improvements identified in the literature. Medical package catalogue and booking system is available to patients 24 hou
+0393|Normal|The web dashboard offers the clinic administrators a single, real-time analytics perspective of scheduling activity, which reduces administrative burden due to manual scheduling, a
+0394|Normal|The three-tier architecture and secure API design has ensured that changes made to the accessibility provided to patients have not compromised the security of patient data, which w
+0396|Heading 2|6.4 Evidence from the User Survey
+0397|Normal|The user survey results support the literature and design goals in that the system offers the accessibility benefits that were expected. The survey participants always found the di
+0398|Normal|Results of the Net Promoter Score analysis show a high proportion of the respondents are likely to recommend the system, a good proxy indicator of patient satisfaction and the valu
+0400|Heading 2|6.5 Conclusion on the Academic Question
+0401|Normal|The evidence gathered from the literature, artefact and user evaluation provides a clear and well-informed response to the academic question: Medical checkup packages by the local 
+0402|Normal|This enhancement encompasses several aspects – 
+0403|List Paragraph|Temporal accessibility - Appointments can be scheduled at any time, outside of clinic hours.
+0404|List Paragraph|Available packages, doctor profiles and scheduling options are clearly accessible and easily browsed in the mobile application.
+0405|List Paragraph|Physical accessibility - No need to visit or phone the clinic to schedule appointment.
+0406|List Paragraph|Real-time scheduling data and less administrative burden Clinic administrators and doctors can optimize the use of clinical resources by reducing scheduling conflicts and administr
+0407|Normal|
+ 	The improvement is significant not marginal. This doesn't just involve making a minor efficiency upgrade to the patient experience and administrative workflow, it's a qualitativ
+0411|Heading 2|
+0414|Heading 1|Chapter 7: Conclusions 
+0416|Heading 2|7.1 Summary of Findings
+0417|Normal|In this project, a Smart Patient Portal and Appointment Management System has been designed, developed and tested in a local clinic setting. It's a three-tiered architecture that i
+0418|Normal|The project has proven how a smart digital booking system can help to increase the medical checkup package accessibility to patients of local clinics significantly. This is substan
+0419|Heading 2|7.2 Achievement of Aims and Objectives
+0420|Normal|Analyzing aims and objectives set in Chapter 1 -
+0421|Normal|Achieved - Aim 1 – Improve availability and convenience of appointments. The mobile application offers 24-hour availability of booking functions, which directly helps to enhance th
+0422|Normal|Aim 3 (Increase quality of healthcare services) - Achieved. “This eliminates a major barrier to access by not requiring people to call or come into the clinic to make an appointmen
+0423|Normal|Partial achievement in the following areas - Aims 3 (Compare patient access before and after digital adoption). The user survey gathers self-reported comparisons by users who have 
+0424|Normal|Complete - Objective 1 (digital booking system) Delivered in full. The mobile application handles the whole booking process, from browsing packages to confirming appointments.
+0425|Normal|Objective 2 (web dashboard for administrators and doctors) - Delivered in full. The Next.js dashboard provides access to all administrative and clinical scheduling features.
+0426|Normal|Objective 3 (Secure backend API) - Completed. NestJS API with JWT authentication and PostgreSQL database is a good solution and covers all functional and security requirements.
+0427|Normal|Objective 4 - User survey - completed and analysed. The results of the survey give empirical proof for the usability and effectiveness of the system.
+0428|Normal|Objective 5 (Critical evaluation and academic question) - Worked on in Chapters 5, 6 and 8.
+0430|Heading 2|7.3 What Has Been Discovered
+0431|Normal|This project has established that the problems commonly faced by local clinics for appointment management are successfully overcome by implementing a digital system that uses multi
+0432|Normal|The project also reinforced that there is a need for the user experience factor to ensure adoption. While the technical aspect is essential, the systems need to be intuitive, respo
+0434|Heading 2|7.4 Directions for Further Work
+0435|Normal|Predictive scheduling - Apply machine learning models to predict doctor consultation times and flexibly modify time intervals between appointments in line with the proposal and the
+0436|Normal|The integration of a secure, in-app communication space between patient and clinic staff, a response to the user feedback from the survey.
+0437|Normal|Patient facing doctor profile ratings and qualifications as requested in the user feedback per doctor rating and review. Fixes and improvements - Bug fixes and enhancements to the 
+0438|Normal|Where national digital health infrastructure is present there could be opportunities for integration with Electronic Health Records Systems.
+0441|Heading 1|Chapter 8: Critical Evaluation and Self-Reflection
+0443|Heading 2|8.1 Critical Evaluation of the Artefact
+0444|Normal|The Smart Patient Portal and appointment management system is effective in achieving the fundamental objectives of design. The structure has three layers which help to maintain a c
+0445|Normal|Soft-delete and JWT-based authentication are both essential for both legal compliance with GDPR and operational security in a personal health data system. The modular structure of 
+0446|Normal|There are parts of the artefact that could be improved such as the notification system, which uses a simple scheduled dispatch model rather than an intelligent reminder system base
+0448|Heading 2|8.2 Critical Evaluation of the Report
+0449|Normal|The report is well organized and a thorough account of the project from the research question to the conclusions. The Literature Review is based on a variety of relevant academic s
+0450|Normal|One area where the report could be improved is adding quantitative performance metrics from the deployed system (such as API response times, database queries performance under load
+0451|Heading 2|8.3 Critical Evaluation of the Process
+0452|Normal|An Agile-inspired iterative development method proved to be an appropriate way to develop the design artefacts on this project, allowing for design artefacts to be updated between 
+0453|Normal|Project management was good in terms of submission deadlines, all four milestones (Proposal, Literature Review, Artefact Design and Test Plan, Milestone 4) were submitted on time. 
+0454|Normal|One of the difficulties in the project was the number of token refresh cycles needed on two different applications (mobile and web). This involved more implementation time than exp
+0456|Heading 2|8.4 Quality of Sources
+0457|Normal|The literature review is based on peer-reviewed papers published in journals, conference papers and academic dissertations from reputable academic journals such as UTHM Periodicals
+0459|Heading 2|8.5 Self-Reflection
+0460|Normal|This project has been a very fruitful learning experience in technical and academic terms. From a technical standpoint, a full-scale application encompassing an app, a web dashboar
+0461|Normal|Academically, skills gained from undertaking a structured literature review and using it to questions and formulate an academic question has developed skills that will be transfera
+0462|Normal|If I had to do this project over again, I would spend more time in the initial design of the API contract between client and server applications, so as to minimize the integration 
+0465|Heading 1|Chapter 9: Evidence of Project Management
+0466|Heading 2|9.1 Project Timeline and Milestones
+0468|Caption|Figure 64: Past Assignments - all submitted Milestones
+0469|Heading 2|9.2 Gantt Chart Summary
+0471|Heading 2|9.3 Risk Management
+0472|Heading 2|9.4 Log Book Met
+0474|Caption|Figure 65: Logbook met with Supervisor and Reader
+0476|Caption|Figure 66: Logbook met with Supervisor and Reader
+0478|Caption|Figure 67: Logbook met with Supervisor and Reader
+0480|Caption|Figure 68: Logbook met with Supervisor and Reader
+0482|Caption|Figure 69: Logbook met with Supervisor and Reader
+0484|Caption|Figure 70: Logbook met with Supervisor and Reader
+0486|Caption|Figure 71: Logbook met with Supervisor and Reader
+0488|Caption|Figure 72: Logbook met with Supervisor and Reader
+0490|Caption|Figure 73: Logbook met with Supervisor and Reader
+0492|Caption|Figure 74: Logbook met with Supervisor and Reader
+0496|Caption|Figure 75: Logbook met with Supervisor and Reader
+0498|Caption|Figure 76: Logbook met with Supervisor and Reader
+0500|Caption|Figure 77: Logbook met with Supervisor and Reader
+0502|Caption|Figure 78: Logbook met with Supervisor and Reader
+0504|Caption|Figure 79: Logbook met with Supervisor and Reader
+0506|Heading 2|9.4 Gantt Charts
+0508|Caption|Figure 80: Gant Chart
+0510|Caption|Figure 81: Gantt Chart Details
+0511|Heading 2|9.5 GitHub Repository 
+0512|Normal|Frontend/ Dashboard – https://github.com/htethtet2001/Frontend.git
+0513|Normal|Mobile App – https://github.com/htethtet2001/mobile.git
+0514|Normal|Backend – https://github.com/htethtet2001/Backend.git
+0516|Heading 1|References
+0517|Normal|Humaid, A.J. and Ghazali, R.B. (2022). Development of Online Booking System for Medical Clinic. Applied Information Technology And Computer Science, [online] 3(1), pp.699–716. Avai
+0518|Normal|‌Nur Atikah Azhari and Nor (2023). A Clinic Appointment System with Authentications for Klinik Sejahtera. Applied Information Technology And Computer Science, [online] 4(2), pp.1–1
+0519|Normal|‌Nanteza, A. (2025). Reducing patient wait times: a digital booking system for consultant doctor appointment at Nakasero Hospital. Mak.ac.ug. [online] doi:http://hdl.handle.net/20.
+0520|Normal|‌Ijsrem.com. (2026). Online Registration and Appointment Scheduling in Hospital by Using Web Application – IJSREM. [online] Available at: https://ijsrem.com/download/online-registr
+0521|Normal|‌Kosalairaman T, Maalini D, Kiruthika R, Janani SK, Nithya T and Pavithra P (2025). Smart Health Consulting and Appointment Booking System with Real-Time Scheduling and Patient-Doc
+0522|Normal|‌Jalleh, J., Tunku, U. and Rahman, A. (2022). HOSPITAL APPOINTMENT SYSTEM A REPORT SUBMITTED TO. [online] Available at: http://eprints.utar.edu.my/4651/1/fyp_CS_2022_JAJ.pdf.
+0523|Normal|‌Internship Training At Eye-Q Vision Private Limited. (n.d.). Available at: https://drs.iihmrdelhi.edu.in:8443/jspui/bitstream/123456789/1706/2/Research_PG_21_024%20%281%29%20%281%
+0528|Heading 1|Appendices
+0529|Heading 2|Appendix A: User Survey Questions
+0530|Normal|	The following survey was administered with Google Forms.
+0531|Normal|Survey Link – https://forms.gle/wddcN6Y4VTwxFBqH9
+0533|Normal|Survey Questions
+0534|Normal|Section 1: General Information
+0535|Normal|Have you used this clinic's services before the digital system was implemented?
+0536|Normal|Yes
+0537|Normal|No
+0538|Normal|Section 2: Accessibility and Convenience
+0539|Normal|Please rate the following on a scale of 1 (Strongly Disagree) to 5 (Strongly Agree).
+0540|Normal|The mobile application made it easy to view all available medical checkup packages. 
+0541|Normal|1 2 3 4 5
+0542|Normal|Were the description of the medical packages clear and easy to understand?
+0543|Normal|Yes 
+0544|Normal|No
+0545|Normal|Partially
+0546|Normal|4.I found the process of booking an appointment online more convenient than calling         or visiting the clinic in person.
+0547|Normal|1 2 3 4 5
+0548|Normal|      5.The digital platform improved my ability to access healthcare services when I needed      
+0549|Normal|         them. 
+0550|Normal|1 2 3 4 5
+0551|Normal|Section 3: Waiting Time and Reminders
+0552|List Paragraph|The automated reminders helped me arrive for my appointment on time. 
+0553|Normal|1 2 3 4 5
+0554|List Paragraph|My actual waiting time at the clinic was lower compared to my previous experiences. 
+0555|Normal|1 2 3 4 5
+0556|Normal|The user interface of the mobile app felt responsive and professional. 
+0557|Normal|1 2 3 4 5
+0558|Normal|9.How likely are you to recommend this digital booking method to a friend?
+0559|Normal|1 2 3 4 5 6 7 8 9 10 
+0560|Normal|Section 4: Trust & Security
+0561|Normal|This addresses your security and data integrity requirements.
+0562|Normal|I felt confident that my personal data was handled securely by the system.  
+0563|Normal|1 2 3 4 5
+0565|List Paragraph|The login and authentication process felt secure yet easy to use.
+0566|Normal|1 2 3 4 5
+0568|Normal|12.Did you encounter any technical errors while using the portal?
+0569|Normal|No 
+0570|Normal|Slow Loading
+0571|Normal|Error Message
+0572|Normal|App Crash
+0574|Heading 2|13.What is the most useful feature of the Smart Patient Portal?  
+0575|Heading 2|Long answer text
+0577|Normal|14.What is one feature we could add to make your booking experience even better?  
+0578|Normal|Short answer text
+0580|Heading 2|Appendix B: System Diagram Descriptions
+0581|Heading 3|B1. System Architecture
+0582|Normal|The three tier client-server architecture is shown in the system architecture diagram. The Presentation Layer includes two applications: the Expo React Native mobile app (patient-f
+0584|Heading 3|B2. ER Diagram
+0585|Normal|The ER diagram consists of 6 main entities: User, DoctorProfile, DoctorType, Schedule, Appointment and Package. User is the focal point, having subtypes patient, doctor and admin. 
+0587|Heading 3|B3. Use Case Summary
+0588|Normal|There are three actors: Patient, Doctor, Admin and 14 main use cases: Register, Login, Browse Packages, Book Appointment, Cancel Appointment, Receive Reminder (Patient); View Sched
+0590|Heading 2|Appendix C: GitHub Repository Links
+0591|Normal|Frontend/ Dashboard – https://github.com/htethtet2001/Frontend.git
+0592|Normal|Mobile App – https://github.com/htethtet2001/mobile.git
+0593|Normal|Backend – https://github.com/htethtet2001/Backend.git
+0594|Heading 2|Appendix D: Ethical Considerations Form 
+0595|Normal|This project has been submitted with a completed Ethical Considerations Form as required (via WOLF). Ethical commitments adhered to in this project are: informed consent, no collec

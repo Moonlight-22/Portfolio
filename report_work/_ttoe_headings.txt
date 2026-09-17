@@ -1,0 +1,127 @@
+=== c:\EDU\Job_Edu\job_doc\Ttoe.docx ===
+paragraphs: 285
+tables: 1
+sections: 1
+--- HEADINGS / STYLES ---
+0002 [Normal] Student Name:
+0004 [Normal] Student Number:
+0006 [Normal] Module Code: 6CS007
+0008 [Normal] Module Name:  Project and Professionalism
+0010 [Normal] Project Title: Patient-Directed Mental Health Platform: Integrating Gemini AI and Real-Time Telepsychiatry
+0012 [Normal] Module Leader Name: Dr Aye Aye
+0014 [Normal] Supervisor Name:
+0016 [Normal] Reader Name:
+0018 [Normal] Submission Date:
+0019 [Normal] (The date you handed in the assessment)
+0021 [Normal] Award Title:
+0022 [Normal] (Award Title for your project, if in doubt refer to your course/Module Registration)
+0025 [Normal] Declaration Sheet
+0026 [Normal] Presented in partial fulfilment of the assessment requirements for the above award.
+0028 [Normal] This work or any part thereof has not previously been presented in any form to the University or to any other institutional body whether for assessment or for other purposes. Save for any express ackn
+0030 [Normal] It is acknowledged that the author of any project work shall own the copyright.  However, by submitting such copyright work for assessment, the author grants to the University a perpetual royalty-free
+0032 [Normal] Student Name (Print):
+0034 [Normal] Student Number: ID:
+0036 [Normal] Signature: …………………………………….…….        Date: …………………
+0037 [Normal] (Must include the unedited statement above. Sign and date)
+0038 [Normal] Please use an electronic signature (scan and insert)
+0039 [Heading 1] Chapter 1: Introduction
+0040 [Normal] 1.1 Project Motivation
+0041 [Normal] Recently there is a problem with getting quick access to cheap as well private psychological help for everyone around world. A lot people suffering from pressures, anxieties as well depressions have v
+0042 [Normal] Although there are many health care companies that have started implementing technology for better productivity; however, they still have an enormous difference of being completely machine-operated ap
+0043 [Normal] Patient directed mental health platform integrating Gemini AI & real time telehealth is our mission for addressing them through creating an app that can be accessed easily on-line. By implementing a n
+0044 [Normal] 1.2 Introduction to LLMs and Telepsychiatry
+0045 [Normal] The fast development of AI and LLMs has brought amazing prospects to digital health care. A large language model (LLMs) is a sophisticated form of artificial intelligence that consists of an extremely
+0046 [Normal] In addition to assistive artificial intelligence applications, telehealth is a service that provides mental health assessment services as well consultation with psychologists via electronic communicat
+0047 [Normal] Using gemini ai as an up-to-date multimodal llm with live telehealth appointment & counseling website integration is what we are doing here for our hybrid psychiatric care solution development project
+0048 [Normal] 1.3 Patient-Directed Mental Health Platform Concept
+0049 [Normal] Medical care is traditionally controlled by doctors with a focus on referrals that follow strict schedules for doctor visits as well. On contrary to that patient directed mental health app gives full 
+0050 [List Paragraph] Patient independence is at its heart for our system design philosophy here. When you enter through an interactive react app interface there is no coercion of any kind as they have 2 options available 
+0051 [List Paragraph] Pathway b manual AI Emotional Support users who need help that is quick and private (or at least a trial) may contact our service for manual intervention of a human therapist through this channel.
+0052 [Normal] Professional human consultation path 2 users are available that want help professionally; they have been diagnosed by doctors themselves so there is no need of any appointment booking process at all.
+0053 [Normal] The two-way approach guarantees healthcare is available for patients through technologies which bridge a significant divide of first aid knowledge with professional diagnosis services.
+0055 [Normal] 1.4 Aims and Objectives
+0056 [Normal] 1.4.1 Academic Question
+0057 [Normal] The central academic question investigated by this project is:
+0058 [Normal] How does offering a patient-directed choice between an API-driven Large Language Model (LLM) chatbot and live telepsychiatry impact accessibility, user satisfaction, and treatment engagement in a web-
+0059 [Normal] 1.4.2 Aims
+0060 [Normal] To answer this academic question, the project establishes the following primary aims:
+0061 [Normal] To build a highly responsive, secure web platform that lowers the barrier to entry for mental health support.
+0062 [Normal] To empower users with personal autonomy by allowing them to select their preferred method of care: immediate AI interaction or professional human consultation.
+0063 [Normal] To successfully integrate a third-party LLM (Google Gemini API) within a secure web framework to handle sensitive emotional support conversations safely and ethically.
+0064 [Normal] 1.4.3 Objectives
+0065 [Normal] To achieve these aims, the following technical and research objectives will be completed:
+0066 [Normal] Develop a dynamic, single-page frontend interface using React.js to deliver a seamless, high-performance user experience.
+0067 [Normal] Build a secure, scalable backend infrastructure using Laravel to handle user authentication, encrypted session management, and API request routing.
+0068 [Normal] Integrate the Google Gemini API using structured prompt engineering to serve as an empathetic, 24/7 conversational agent for emotional first-aid.
+0069 [Normal] Implement a secure appointment booking and real-time communication portal for users opting for the human doctor telepsychiatry pathway.
+0070 [Normal] Design and deploy a relational database schema (MySQL/PostgreSQL) to safely manage user profiles, appointment schedules, and encrypted chat histories.
+0071 [Normal] Formulate user feedback surveys and evaluate platform usability, patient satisfaction, and engagement across both care pathways.
+0072 [Normal] 1.5 Scope and Limitations
+0073 [Normal] This work covers from conception through development to testing out an online program for treating illnesses that has two ways how patients can get help at once. The scope covers frontend development 
+0074 [Normal] There is a clear recognition of some technology as well as process constraints.
+0075 [List Paragraph] The scope of non-diagnostic AI (Gemini) includes only emergency care for emotions with no diagnosis prescribing medication replacement by professionals.
+0076 [List Paragraph] External third-party API dependencies system availability & response time on an auto-care path depends upon Google 3rd-party Gemini API performance/quota/uptime.
+0077 [List Paragraph] Security & ethics considerations data privacy concerns require robust authentication mechanisms with secure transmission capabilities; complete adherence to healthcare industry regulations like HCPAS/
+0078 [Normal] 1.6 Report Framework
+0079 [Normal] The paper has been divided up by sections which provide an overview on history, theory basis for our work; architecture & programming language used to develop it; testing procedures etc.; results obta
+0080 [List Paragraph] Chapter 1: Introduction Outlines the project motivation, introduces LLMs and telepsychiatry, defines the patient directed concept, and addresses the academic question, aims, objectives, scope, and lim
+0081 [List Paragraph] Chapter 2: Literature Review of Machine Learning and Telepsychiatry synthesizes academic literature on LLM applications in mental healthcare, telepsychiatry efficacy, hybrid care models, and ethical r
+0082 [List Paragraph] Chapter 3: System Architecture and Methodology Details the software design, technology stack selection (React, Laravel, Gemini API, MySQL), database schemas, and dual-pathway workflow implementation.
+0083 [List Paragraph] Chapter 4: Implementation and Testing document the development phase, API integration techniques, prompt engineering strategies, security implementations, and functional system testing.
+0084 [List Paragraph] Chapter 5: Results and Discussion Analyzes system performance metrics, user feedback survey responses, engagement rates, and comparative satisfaction between AI and human pathways.
+0085 [List Paragraph] Chapter 6: Conclusions Summarizes the key results directly addresses the research question and reflects on project milestones.
+0086 [List Paragraph] Chapter 7: Critical Evaluation provides an intensive critical evaluation of technical processes, system limitations, personal development, and recommendations for future research.
+0088 [Normal] 1.7 Summary
+0091 [Heading 1] Chapter 2: Literature Review
+0092 [Normal] 2.1 Introduction
+0095 [Normal] 2.2 Artificial Intelligence and LLMs in Psychological contexts.
+0099 [Normal] 2.3 User Engagement, Stigma Mitigation, and Ethical Boundaries.
+0102 [Normal] 2.4 Telepsychiatry efficacy and accessibility to patients.
+0105 [Normal] 2.5 Hybrid approaches integrating AI and telepsychiatry.
+0108 [Normal] 2.6 Technical Frameworks and System Scalability.
+0113 [Normal] 2.7 Summary
+0117 [Heading 1] Chapter 3 – System Design and Development
+0118 [Normal] 3.1 Introduction
+0121 [Normal] 3.2 Requirements Analysis
+0126 [Normal] 3.3 System Design
+0132 [Normal] 3.4 Database Design
+0137 [Normal] 3.5 User Interface Design
+0145 [Normal] 3.6 System Development
+0147 [Normal] 3.7 Development Tools
+0151 [Normal] 3.8 Chapter Summary
+0155 [Heading 1] Chapter 4 – Implementation and Testing
+0156 [Normal] 4.1 Introduction
+0157 [Normal] Chapter 4 is about the implementation, deployment, and extensive testing of the patient directed Mental Health Platform. It is about integrating gemini ai and an online psychiatry service for providin
+0158 [Normal] 4.2 Implementation Details
+0164 [Normal] 4.3 Testing Strategies and methods.
+0169 [Normal] 4.4 Test Cases and Results
+0174 [Normal] 4.5 Chapter Summary
+0176 [Heading 1] Chapter 5 – Results and Discussion
+0177 [Normal] 5.1 Introduction
+0180 [Normal] 5.2 System Evaluation
+0182 [Normal] 5.2.1 Technical and Artifact Evaluation
+0191 [Normal] 5.2.2 Usability and User Feedback Survey Analysis
+0197 [Normal] 5.3 Discussion of Results
+0199 [Normal] 5.3.1 Bridging the Digital Healthcare Gap Through Patient Autonomy
+0201 [Normal] 5.3.2 AI Safety, Prompt Engineering, and Triage Governance
+0203 [Normal] 5.3.3 Technical Framework Performance
+0206 [Normal] 5.4 Achievement of Objectives
+0215 [Normal] 5.5 Chapter Summary
+0216 [Normal] Chapter 5 provided an extensive analysis and discussion of the patient directed Mental Health Platform. Systematic test plan execution (TC1-TC6) validated the technical strength, security, and data co
+0217 [Heading 1] Chapter 6 – Conclusion
+0218 [Normal] 6.1 Summary of the Project
+0225 [Normal] 6.2 Conclusion
+0228 [Normal] 6.3 Limitations
+0234 [Normal] 6.4 Future Work
+0236 [Normal] 6.5 Chapter Summary
+0237 [Normal] Chapter 6 summarized the project's core contributions, presenting concluding reflections on the viability of patient-directed hybrid mental health platforms. The project successfully achieved its rese
+0238 [Heading 1] Chapter 7 – Critical Evaluation and Professionalism
+0239 [Normal] 7.1 Overall Project
+0242 [Normal] 7.2 Project Planning and Management.
+0248 [Normal] 7.3 System Design
+0254 [Normal] 7.4 Development
+0259 [Normal] 7.5 Testing and Quality Assurance.
+0264 [Normal] 7.6 Time Management
+0268 [Normal] 7.7 Research and Learning.
+0275 [Normal] 7.8 Professional and ethical considerations.
+0281 [Normal] 7.9 Personal Reflection

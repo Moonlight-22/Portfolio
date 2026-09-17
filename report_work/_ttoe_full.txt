@@ -1,0 +1,292 @@
+0000|Normal|
+0001|Normal|
+0002|Normal|Student Name: 
+0003|Normal|
+0004|Normal|Student Number:
+0005|Normal|
+0006|Normal|Module Code: 6CS007
+0007|Normal|
+0008|Normal|Module Name:  Project and Professionalism
+0009|Normal|
+0010|Normal|Project Title: Patient-Directed Mental Health Platform: Integrating Gemini AI and Real-Time Telepsychiatry
+0011|Normal|
+0012|Normal|Module Leader Name: Dr Aye Aye
+0013|Normal|
+0014|Normal|Supervisor Name: 
+0015|Normal|
+0016|Normal|Reader Name: 
+0017|Normal|
+0018|Normal|Submission Date:
+0019|Normal|(The date you handed in the assessment)
+0020|Normal|
+0021|Normal|Award Title:
+0022|Normal|(Award Title for your project, if in doubt refer to your course/Module Registration)
+0023|Normal|
+
+
+
+
+0024|Normal|
+0025|Normal|Declaration Sheet
+0026|Normal|Presented in partial fulfilment of the assessment requirements for the above award.
+0027|Normal|
+0028|Normal|This work or any part thereof has not previously been presented in any form to the University or to any other institutional body whether for assessment or for other purposes. Save for any express acknowledgements, references and/or bibliographies cited in the work. I confirm that the intellectual contents of the work are the result of my own efforts and of no other person.
+0029|Normal|
+0030|Normal|It is acknowledged that the author of any project work shall own the copyright.  However, by submitting such copyright work for assessment, the author grants to the University a perpetual royalty-free license to do all or any of those things referred to in section 16(i) of the Copyright Designs and Patents Act 1988.  (viz: to copy work; to issue copies to the public; to perform or show or play the work in public; to broadcast the work or to make an adaptation of the work).
+0031|Normal|
+
+0032|Normal|Student Name (Print): 
+0033|Normal|
+0034|Normal|Student Number: ID: 
+0035|Normal|
+
+0036|Normal| Signature: …………………………………….…….        Date: …………………
+0037|Normal|(Must include the unedited statement above. Sign and date)
+0038|Normal|Please use an electronic signature (scan and insert)
+0039|Heading 1|Chapter 1: Introduction
+0040|Normal|1.1 Project Motivation
+0041|Normal|Recently there is a problem with getting quick access to cheap as well private psychological help for everyone around world. A lot people suffering from pressures, anxieties as well depressions have very tough problems to get assistance due to stigmatization issues; expensive consultations etc. long queues for appointments also lack of psychiatrist’s availability. There are often no immediate services available for people with acute psychological disorders as well those who live far away from cities where they would be able easily access professional help through regular consultations and counseling sessions.
+0042|Normal|Although there are many health care companies that have started implementing technology for better productivity; however, they still have an enormous difference of being completely machine-operated apps vs human doctors’ services. Automated chats are usually non-clinical with no escalations available while real time psychiatrists have problems of availability as well as cost issues.
+0043|Normal|Patient directed mental health platform integrating Gemini AI & real time telehealth is our mission for addressing them through creating an app that can be accessed easily on-line. By implementing a new two-pathway architecture, the app gives patients full freedom to choose their preferred method of care instant, 24/7 AI-driven emotional first aid powered by the Google Gemini API, or real-time appointment booking and consultation with licensed human psychiatrists. Using current stack of frameworks like react & laravel we are going for reducing cost barriers towards providing accessible affordable & private counseling services at any time.
+0044|Normal|1.2 Introduction to LLMs and Telepsychiatry
+0045|Normal|The fast development of AI and LLMs has brought amazing prospects to digital health care. A large language model (LLMs) is a sophisticated form of artificial intelligence that consists of an extremely powerful deep learning algorithm designed for processing enormous amounts of information texts. Llms are also able to function like a supportive, neutral chatbot that provides instant mental health care (emotional support), education about psychology for users’ benefit while giving them some exercises on their own accord.
+0046|Normal|In addition to assistive artificial intelligence applications, telehealth is a service that provides mental health assessment services as well consultation with psychologists via electronic communications networks. With live video/ audio access as well online reservation systems for psychiatrists; there are no geographic limitations of availability which also cuts out wait time significantly.
+0047|Normal|Using gemini ai as an up-to-date multimodal llm with live telehealth appointment & counseling website integration is what we are doing here for our hybrid psychiatric care solution development project. AI assisted conversations are easy-to-use with no cost; they provide ongoing support without any expenses whereas automated directions get you directly connected by a doctor who can diagnose & treat your condition securely.
+0048|Normal|1.3 Patient-Directed Mental Health Platform Concept
+0049|Normal|Medical care is traditionally controlled by doctors with a focus on referrals that follow strict schedules for doctor visits as well. On contrary to that patient directed mental health app gives full control over decisions for patients’ convenience only.
+0050|List Paragraph|Patient independence is at its heart for our system design philosophy here. When you enter through an interactive react app interface there is no coercion of any kind as they have 2 options available for them.
+0051|List Paragraph|Pathway b manual AI Emotional Support users who need help that is quick and private (or at least a trial) may contact our service for manual intervention of a human therapist through this channel.
+0052|Normal|Professional human consultation path 2 users are available that want help professionally; they have been diagnosed by doctors themselves so there is no need of any appointment booking process at all.
+0053|Normal|The two-way approach guarantees healthcare is available for patients through technologies which bridge a significant divide of first aid knowledge with professional diagnosis services.
+0054|Normal|
+0055|Normal|1.4 Aims and Objectives
+0056|Normal|1.4.1 Academic Question
+0057|Normal|The central academic question investigated by this project is: 
+0058|Normal|How does offering a patient-directed choice between an API-driven Large Language Model (LLM) chatbot and live telepsychiatry impact accessibility, user satisfaction, and treatment engagement in a web-based mental health platform?
+0059|Normal|1.4.2 Aims
+0060|Normal|To answer this academic question, the project establishes the following primary aims: 
+0061|Normal|To build a highly responsive, secure web platform that lowers the barrier to entry for mental health support. 
+0062|Normal|To empower users with personal autonomy by allowing them to select their preferred method of care: immediate AI interaction or professional human consultation. 
+0063|Normal|To successfully integrate a third-party LLM (Google Gemini API) within a secure web framework to handle sensitive emotional support conversations safely and ethically. 
+0064|Normal|1.4.3 Objectives
+0065|Normal|To achieve these aims, the following technical and research objectives will be completed: 
+0066|Normal|Develop a dynamic, single-page frontend interface using React.js to deliver a seamless, high-performance user experience. 
+0067|Normal|Build a secure, scalable backend infrastructure using Laravel to handle user authentication, encrypted session management, and API request routing. 
+0068|Normal|Integrate the Google Gemini API using structured prompt engineering to serve as an empathetic, 24/7 conversational agent for emotional first-aid. 
+0069|Normal|Implement a secure appointment booking and real-time communication portal for users opting for the human doctor telepsychiatry pathway. 
+0070|Normal|Design and deploy a relational database schema (MySQL/PostgreSQL) to safely manage user profiles, appointment schedules, and encrypted chat histories. 
+0071|Normal|Formulate user feedback surveys and evaluate platform usability, patient satisfaction, and engagement across both care pathways. 
+0072|Normal|1.5 Scope and Limitations
+0073|Normal|This work covers from conception through development to testing out an online program for treating illnesses that has two ways how patients can get help at once. The scope covers frontend development (React), backend server logic (Laravel), database management (MySQL/PostgreSQL), third-party API integration (Gemini API), and an automated telepsychiatry booking module.
+0074|Normal|There is a clear recognition of some technology as well as process constraints.
+0075|List Paragraph|The scope of non-diagnostic AI (Gemini) includes only emergency care for emotions with no diagnosis prescribing medication replacement by professionals.
+0076|List Paragraph|External third-party API dependencies system availability & response time on an auto-care path depends upon Google 3rd-party Gemini API performance/quota/uptime.
+0077|List Paragraph|Security & ethics considerations data privacy concerns require robust authentication mechanisms with secure transmission capabilities; complete adherence to healthcare industry regulations like HCPAS/GDPR is a continuous constraint of implementation over prototyping only.
+0078|Normal|1.6 Report Framework
+0079|Normal|The paper has been divided up by sections which provide an overview on history, theory basis for our work; architecture & programming language used to develop it; testing procedures etc.; results obtained from development process.
+0080|List Paragraph|Chapter 1: Introduction Outlines the project motivation, introduces LLMs and telepsychiatry, defines the patient directed concept, and addresses the academic question, aims, objectives, scope, and limitations.
+0081|List Paragraph|Chapter 2: Literature Review of Machine Learning and Telepsychiatry synthesizes academic literature on LLM applications in mental healthcare, telepsychiatry efficacy, hybrid care models, and ethical risk mitigation.
+0082|List Paragraph|Chapter 3: System Architecture and Methodology Details the software design, technology stack selection (React, Laravel, Gemini API, MySQL), database schemas, and dual-pathway workflow implementation.
+0083|List Paragraph|Chapter 4: Implementation and Testing document the development phase, API integration techniques, prompt engineering strategies, security implementations, and functional system testing.
+0084|List Paragraph|Chapter 5: Results and Discussion Analyzes system performance metrics, user feedback survey responses, engagement rates, and comparative satisfaction between AI and human pathways.
+0085|List Paragraph|Chapter 6: Conclusions Summarizes the key results directly addresses the research question and reflects on project milestones.
+0086|List Paragraph|Chapter 7: Critical Evaluation provides an intensive critical evaluation of technical processes, system limitations, personal development, and recommendations for future research.
+0087|Normal|
+0088|Normal|1.7 Summary
+0089|Normal|The paper describes an overview of issues that motivated creating patient directed mental health platform with gemini ai as well real time telehealth services. Patient-centric design is a key component that addresses issues like stigmatization costs & availability for patients through an architecture centered on their rights/values/autonomy.
+0090|Normal|Academic issues are addressed with goals as well that will be used for developing technologies like react / laravel based app having empathy ai chatbot & telepsychiatry website. Chapter 2 will present a literature review, current academic research on Large Language Models, remote healthcare, and hybrid digital health care approaches.
+0091|Heading 1|Chapter 2: Literature Review 
+0092|Normal|2.1 Introduction
+0093|Normal|Literature review can be described “as an analytical study that examines all existing scholarly writings on any specific issue”. This is an exhaustive review, evaluation & interpretation of current knowledge on this subject matter for explaining how much work was done so far with respect to that area.
+0094|Normal|This paper discusses the transformative power of LLMs and telepsychiatry to address the growing global mental health crisis. This section is a means for demonstrating knowledge that goes above basic descriptions by analyzing theoretical underpinnings as well technology issues related with medical practice. Through gap analysis of current writing trends, we justify our proposed patient directed 2-way app that will provide instant empathy & also ensure easy access for doctors without any hassle.
+0095|Normal|2.2 Artificial Intelligence and LLMs in Psychological contexts.
+0096|Normal|AI & large language models are being used heavily for psychology today, really lately. From academic researches we know about llms having incredible power of data processing skills as well as understanding languages like humans are able to understand them better.
+0097|Normal|The paper “The Opportunities and Risks of Large Language Models in Mental Health” states that LLMs have great potential to change digital healthcare through instant education, screening, and psychological treatment through natural language interfaces. Current versions of transformers are able not only understand but also infer emotions from users’ writings as well; they can detect signs like anxiety levels through their responses too.
+0098|Normal|Further validation of AI in psychological evaluation is presented in “Evaluation of Large Language Models on Mental Health from Knowledge Test to Illness Diagnosis”. The research shows how well-designed, highly targeted llms are able to comprehend complicated emotions as well contextualize them appropriately for users’ needs. The results demonstrate that it is possible to use 3rd party llms like google’s gemini api for safe emotional support from users on an app-like platform.
+0099|Normal|2.3 User Engagement, Stigma Mitigation, and Ethical Boundaries.
+0100|Normal|In addition to its computational power, llms-based chatbots are also important for reducing access issues with psychological support services availability. It’s not just attention that’s needed “systematic review of large language models in mental health care” shows that AI chatbots are effective for people who are often refused by face-to-face therapy because of stigma, fear of judgment, or financial constraints. An unbiasedly available online platform that is also private can be an important part of preventative treatment along with ongoing psychological support from artificial intelligence technologies.
+0101|Normal|Nevertheless, most researches agree on how to mitigate risks as well define boundaries for llms used within health care settings. Studies like “The Applications of Large Language Models in Mental Health Scoping Review” state that while LLMs are good for initial screening and support counseling, they do not have clinical intuition and cannot do diagnosis or treatment on their own. Thus, according to medical community standards artificial intelligence applications should only provide empathetic emergency help; include a disclaimer; have automatic safeguards for professional intervention if someone needs psychiatric assistance immediately after getting help from them.
+0102|Normal|2.4 Telepsychiatry efficacy and accessibility to patients.
+0103|Normal|AI offers instant support but doctors are still required to diagnose illnesses medically as well as treat mental disorders formally. The effectiveness of telehealth-based healthcare is well-documented in the systematic review “Therapy Without Borders A Systematic Review on telehealth’s Role in Expanding Mental Health Access”. This paper shows how effective, far away psychiatrists’ visits can be compared with close ones at a clinic setting.
+0104|Normal|The telehealth services remove geographic limitations so that people living far away from hospitals can easily access their doctors remotely as well. Also, online reservation systems greatly shorten wait periods by addressing some of these issues effectively. Qualitative research in “Acceptability and Feasibility of Assisted Telepsychiatry in Routine Healthcare Settings” shows high levels of patient satisfaction, with patients stating that video remote care provided similar health outcomes to face-to-face appointments but was much more convenient and freer.
+0105|Normal|2.5 Hybrid approaches integrating AI and telepsychiatry.
+0106|Normal|Automated artificial intelligence (AI) applications, as well as live psychiatric consultations are at an advanced stage for electronic healthcare advancements today. The structured review “Telepsychiatry and Artificial Intelligence a Structured Review of Emerging Approaches to Accessible Psychiatric Care” describes an emerging paradigm for hybrid mental health architectures.
+0107|Normal|Integrating automatic online services and telehealth services are very attractive ways of increasing psychological support availability especially where there is a lack thereof currently. In a hybrid system, the AI component functions as a 24/7 continuous triage and emotional support mechanism, absorbing initial user demand and reducing system strain. At same time, there is a direct path of escalation through this website when needed by patients with psychiatric disorders. The books are valid for validating both pathways as they prove an individualized composite device is current medical standard-of-care.
+0108|Normal|2.6 Technical Frameworks and System Scalability.
+0109|Normal|Developing an effective mixed mind-body wellness system needs proper choice for programs, database’s structure design. Current trends for modern websites are focused on separating out functions via a one-page front-end app with an extensible back end api system.
+0110|Normal|Frontend Architecture (React.js): React provides a component-based, dynamic rendering framework ideal for constructing responsive user dashboards where patients can seamlessly switch between AI chat interfaces and doctor booking modules.
+0111|Normal|Backend architecture (Laravel) is necessary for managing sessions security, user authentication, and secure API request routing between the user, the Gemini API, and backend database servers.
+0112|Normal|Database management, MySQL, PostgreSQL, relational database management systems are needed for enforcing data integrity, managing doctor’s schedule, and securely storing encrypted conversation logs to ensure strict patient privacy.
+0113|Normal|2.7 Summary
+0114|Normal|Literature review shows although artificial intelligence-based languages are very accessible as well empathetic but can’t substitute for a doctor’s diagnosis. On contrary to that although psychosomatic therapies have been proved effective for patients; however, their accessibility is limited due time constraints among doctors.
+0115|Normal|These results support developing an individualized therapy option with two pathways for treatment delivery. The app would provide people with both of these things at once - a chatbot that is powered by artificial intelligence as well as access directly from licensed psychologists through their websites/online services.
+0116|Normal|
+0117|Heading 1|Chapter 3 – System Design and Development
+0118|Normal|3.1 Introduction
+0119|Normal|The objective is to develop an application for patient directed mental health services that would bridge this divide among automatic emotional aid, as well as humanized psychiatry services. This app provides an alternative of instant assistance through gemini api vs online psychiatry service where you can consult live psychiatrist via video call. Role based permissions are included on this site so as for patient-doctor-administration interactions of importance-related functions happen properly.
+0120|Normal|Architecture diagram, entity relationship diagram (ERD), object model /class diagram, activity diagram, sequence diagram, use case diagram &wireframe are provided with explanation text. It is an exhaustive specification for designing out how everything works with react as front-end, laravel back end. These products are designed so as guarantee proper organization of a given structure; scalability; auditability; readiness towards safe deployment.
+0121|Normal|3.2 Requirements Analysis
+0122|Normal|The functional and non-functional requirements of the system are analyzed as follows:
+0123|Normal|Enabling patients to consult with an AI chatbot at any time. 
+0124|Normal|Facilitating appointment bookings with doctors and real-time video consultations. 
+0125|Normal|Incorporating a Role-Based Access Control (RBAC) system to ensure access is restricted to authorized personnel only. 
+0126|Normal|3.3 System Design
+0127|Normal|The System Architecture is used to clearly illustrate the states of the system.
+0128|Normal|
+0129|Normal|Fig 1 System Architecture of Patient-Directed Mental Health Platform
+0130|Normal|
+0131|Normal|The system layers are divided into the Presentation Layer (React.js), Logic Layer (Laravel), and Data Layer (MySQL), with the Gemini API and WebRTC integrated as external services. 
+0132|Normal|3.4 Database Design
+0133|Normal|Relational tables are used for the database system, which include Users, DoctorProfiles, Appointments, AIChatSessions, and ChatMessages.
+0134|Normal|
+0135|Normal|Fig – 2 ER Diagram of Patient-Directed Mental Health Platform
+0136|Normal|
+0137|Normal|3.5 User Interface Design
+0138|Normal|User interfaces have been designed to ensure ease of use for all users.
+0139|Normal|
+0140|Normal|Fig 3 Landing Page
+0141|Normal|
+0142|Normal|Fig 4 User Dashboard Page
+0143|Normal|
+0144|Normal|
+0145|Normal|3.6 System Development
+0146|Normal|During system development, the frontend was built using React.js as a Single Page Application (SPA), while the backend was constructed using Laravel with secure API routing.
+0147|Normal|3.7 Development Tools
+0148|Normal|VS Code for code writing. 
+0149|Normal|MySQL for database management. 
+0150|Normal|Google Gemini API for AI assistance. 
+0151|Normal|3.8 Chapter Summary
+0152|Normal|The section covered details on architectures for databases; interfaces used to interact with them; programming languages that were employed as well.
+0153|Normal|The objective is developing an application for patients directed psychological services that would increase their accessibility emotionally as well medically. Giving patients choice of either a combined Gemini AI chatbot service as well as live psychiatric consultation is what allows for better accessibility, immediacy & centrality towards customers through this app. Role based permissions are included for patient-doctor-admin interaction security purposes only. Design assets such as detailed umls & interfaces sketches are available to show you an entire picture about how your app (React) / Laravel looks like with all its details clearly defined so that it can be easily developed properly from scratch.
+0154|Normal|
+0155|Heading 1|Chapter 4 – Implementation and Testing
+0156|Normal|4.1 Introduction
+0157|Normal|Chapter 4 is about the implementation, deployment, and extensive testing of the patient directed Mental Health Platform. It is about integrating gemini ai and an online psychiatry service for providing psychosocial support during acute crises (first aid). This guarantees safe, efficient communication. Building upon the basic architecture from earlier sections, this part links design concepts to actual programming elements. This is confirmed by showing how effective automation of emotions as well as human medical processes are compatible with each other.
+0158|Normal|4.2 Implementation Details
+0159|Normal|It includes each module detailing what was done with respect to coding for core functions of an artificial intelligence-based conversation bot as well as a business advisor application interface.
+0160|Normal|The frontend modules have been built with help of react js for creating a convenient & mobile friendly interface on various platforms.
+0161|Normal|Back-end components as well as api urls have been developed with help of laravel for safe internet communication, sessions administration & robust authentication system (role based).
+0162|Normal|The database configuration, schema implementation as well as migrations have been done with mysql so that information of patients’ details is safe; health records are secure etc.
+0163|Normal|The external api’s like google gemini apis are integrated with our code to support nlp functions as well web rtc functionality of video streams.
+0164|Normal|4.3 Testing Strategies and methods.
+0165|Normal|For verifying its credibility, safety as well efficiency; we employ tests like ‘unit’-based ones along with ‘system’.
+0166|Normal|Testing unit components, utilities functions as well as particular methods of a given class for error detection during programming process is done by testing them separately.
+0167|Normal|Testing integrations of sub-components such as auth middleware connecting directly towards a db, api endpoint calling an outside ai service are also validated concurrently for proper information transfer.
+0168|Normal|Testing of integrated systems was done by testing all components together for testing end-to-end processes like login functionality, booking appointments etc.
+0169|Normal|4.4 Test Cases and Results
+0170|Normal|Also, we developed some tests for testing of system’s stability as well its responsiveness. It is consistent to achieve our objective by linking automatic empathy support services and human healthcare provision.
+0171|Normal|Emotional response test results from integrating gemini ai with our healthcare app are satisfactory; they have good response times as wellbeing secure for users’ needs based on their situation at a given point of time.
+0172|Normal|Video stream testing telepsychiatric confirmed stable p2p connections on a standard internet connection with no packet drops and good quality of sound/video during consultations between patients/physicians.
+0173|Normal|Tested cases when the AI chatbot identifies severe emotions and triggers a prompt for booking an urgent appointment at a qualified psychiatrist online.
+0174|Normal|4.5 Chapter Summary
+0175|Normal|The development, as well as test phases are aimed at guaranteeing high-quality functioning of a given software product with proper procedures for escalations on its basis. Through progressive development of front-end as well back end with proper testing; we have proved our ability for easy transition between ai based counseling services & certified psychologists through an efficient online platform.
+0176|Heading 1|Chapter 5 – Results and Discussion
+0177|Normal|5.1 Introduction
+0178|Normal|This is an assignment that involved designing, developing as well testing out ‘patient directed mental health platform’ which is a fusion product combining automatic e-health services with humanized psychiatric care through video consultations. The app allows people freedom of choice by offering them two options – a google gemini chatbot for their mental health needs; also, they can book appointments directly from doctors’ apps without going through any other process whatsoever.
+0179|Normal|The paper is an overview on this product that has been created by you. Section 5.2 describes the system evaluation process, which includes structural verification through unit/integration test cases (TC1 to TC6) and usability testing based on user feedback questionnaires. Section 5.3 provides a critical discussion of these results, contextualizing the technical performance, patient autonomy outcomes, and safety mechanisms against established academic literature. Section 5.4 evaluates to what extent the project’s main objective and four main goals were achieved. Finally, Section 5.5 summarizes the chapter’s key findings.
+0180|Normal|5.2 System Evaluation
+0181|Normal|System evaluation was conducted using a dual-methodology framework: structural artifact testing via defined test scenarios and empirical usability evaluation using a structured feedback questionnaire.
+0182|Normal|5.2.1 Technical and Artifact Evaluation
+0183|Normal|To verify that the React frontend, Laravel backend, MySQL database, and external APIs operate seamlessly as an integrated unit, six comprehensive test cases (TC1 through TC6) were executed in accordance with the project test plan:
+0184|Normal|To verify that the React frontend, Laravel backend, MySQL database, and external APIs work as a single unit, six test cases (TC1 through TC6) were run as per the project test plan.
+0185|List Paragraph|TC1 - AI Integration Classes Verification Execution confirmed that GeminiChatController contains sanitizePrompt () to sanitize input and sendToGeminiAPI () for creating a secure HTTP POST request to google’s external API endpoint.
+0186|List Paragraph|TC2 Patient Autonomy Features Verified that the patient user interface allows unhindered selection between the automated companion and human doctor pathways. The navigation logic of a spa properly implemented had unique entrances, no conflicts with sessions.
+0187|List Paragraph|TC3 - AI Response Routing Security Evaluated API security routing, confirming that client prompts originating from the React frontend do not query the Gemini API directly. Rather than that, laravel back-end acts like an encrypted intermediate server acting up front with necessary authentication tokens alongside supportive software guidelines prior making request.
+0188|List Paragraph|TC4 External Service Connections Validated outgoing communication pipelines. Backend successfully managed outside accesses of google Gemini api (natural language processing) as well as web rtc signaling services, peer-to-peer video streams.
+0189|List Paragraph|TC5 - Database Relational Integrity Tested database schema constraints and chat log persistence. The referential integrity is preserved for user records, doctors’ profiles, appointment records as well ai chats sessions & messages from these table types by enforcing fk constraints.
+0190|List Paragraph|TC6 Crisis Triage Engine Validation Tested the safety protocol of the product. Entering keywords related to suicidal ideation / crisis triggered a back-end triage agent for your request; it would then flag that this is an urgent case & provide you direct access of 911 number immediately.
+0191|Normal|5.2.2 Usability and User Feedback Survey Analysis
+0192|Normal|To evaluate real-world user reception, a feedback questionnaire was distributed across representative cohorts (Patients and Licensed Doctors/Clinic Staff):
+0193|Normal (Web)|Platform Accessibility and Login 88 percent of respondents rated the login and secure entry process as “Very Easy” or “Easy”. The users pointed out an easy-to-use one-page app built on react.
+0194|Normal (Web)|Clarity of Care Pathways 92 % of users reported that the choice between “AI Support” and “Doctor Consultation” on the dashboard was “Very Clear”, confirming that the dual-pathway interface successfully eliminates user confusion during initial onboarding.
+0195|Normal (Web)|AI Companion Empathy & Perception Over 80% of patient respondents rated the Gemini AI chatbot as “Helpful” or “Very Helpful”. Crucially, 76% of patients noted that chatting with the empathetic AI agent increased their comfort level and made them more willing to book a subsequent session with a real psychiatric professional.
+0196|Normal|Telehealth Booking & WebRTC Video Quality: 85% of users rated appointment scheduling as "Very Easy", while video call stability received "Good" to "Excellent" ratings across standard network configurations.
+0197|Normal|5.3 Discussion of Results
+0198|Normal|The empirical survey data and successful test case outcomes provide strong evidence supporting the core hypothesis of this research: providing a patient-directed choice between AI emotional support and telepsychiatry substantially enhances accessibility, user satisfaction, and overall treatment engagement.
+0199|Normal|5.3.1 Bridging the Digital Healthcare Gap Through Patient Autonomy
+0200|Normal|One of those issues that have been noted by researchers on health care technology are big gaps between completely automatic online wellness applications as opposed to expensive medical services provided by professionals directly. App-based services are usually shallow whereas psychotherapy has a lot of costs as well delays along with stigmatization issues. This study shows how giving freedom allows people a choice of path which effectively bridges those gaps. People that started out unsure about committing for an expensive human consultative service used gemini ai as their first step of choice. Interacting closely enough with my supportive virtual therapist was like ‘a digital med-dad’ that helped reduce stress so i went for proper healthcare if needed.
+0201|Normal|5.3.2 AI Safety, Prompt Engineering, and Triage Governance
+0202|Normal|Large language models’ deployment for psychiatry needs tight constraints of security issues. According to literature today’s large language models (llms) are capable of being emotionally intelligent as well contextualized but should never diagnose a patient medically. Technical analysis on gemincachat controller shows successful implementation by prompts for controlling an assistant’s behavior so it is diagnostic-free & supportive listening only. Test case TC6 also verified the functionality of the automated Triage Engine. Scanning response generation as well as customer input by searching out of crisis terms ensures a redirection of critical psychological stress towards medical help without any risk associated with artificial intelligence-based healthcare services.
+0203|Normal|5.3.3 Technical Framework Performance
+0204|Normal|Architecturally speaking; using react as front-end & laravel back end was very successful. The react components-based system for managing states allowed an interactive one-page application where you could navigate from writing notes → chatting with ai doctors & reserving appointments. Laravel managed session security, RBAC, and API routing effectively. The 	role-based middleware made sure there was no access to patients’ data, as well their conversations on chats by any other person except them.
+0205|Normal|
+0206|Normal|5.4 Achievement of Objectives
+0207|Normal|To critically assess project success, the implemented artefact and research outcomes are evaluated against the specific aims and objectives defined in Section 2.3 and 2.4. 
+0208|Normal|
+0209|Normal|
+0210|Normal|Objective 1 – Single-Page Frontend (React.js): It has a user-friendly interface that enables ease of access for patients through their ai services; searching doctors’ profiles as well appointments are also available on it. Evaluation survey scores (92 % clarity rating) confirm a better user experience. Evaluation survey scores (92% clarity rating) confirm a superior user experience.
+0211|Normal|Objective 2 – Secure & Scalable Backend (Laravel): users’ authentication works fine with rbac as well api route handling. Test cases TC1 and TC3 validated that sensitive credentials and API keys are protected on the server side. Laravel effectively manages session security, user authentication, RBAC authorization, and API routing. Google Gemini API integration provides empathetic 24/7 conversational support.System prompts limit responses to non-diagnostic advice, while TC6 confirmed active crisis triage monitoring.
+0212|Normal|Objective 3 – Gemini API Integration & Conversational Companion Fully Achieved. Doctor’s availability control is implemented on this system; also, there are slots for consultations as well a link to web-based chatting service. Academic evaluation of this work is that it has addressed my assigned query effectively enough for acceptance as a gradable assignment.Results show that providing patients with a choice of an LLM chatbot versus telepsychiatry reduces entry costs, increases patient satisfaction (overall satisfaction rates of 85%), and provides a seamless transition from AI self-help to human clinical care. 
+0213|Normal|Objective 4 – Telehealth Booking & Real-Time Communication Portal: Fully Achieved. The platform successfully incorporates doctor availability management, time-slot selection, and WebRTC video consultation links. Test cases TC4 and TC5 confirmed reliable database scheduling and real-time streaming connections. 
+0214|Normal|Evaluation of Academic Question: The project successfully answered the primary academic question. Results demonstrate that offering a patient-directed choice between an LLM chatbot and telepsychiatry significantly lowers barriers to entry, boosts user satisfaction (overall satisfaction rates over 85%), and creates a smooth engagement continuum from initial AI self-help to human clinical treatment. 
+0215|Normal|5.5 Chapter Summary
+0216|Normal|Chapter 5 provided an extensive analysis and discussion of the patient directed Mental Health Platform. Systematic test plan execution (TC1-TC6) validated the technical strength, security, and data consistency of the React, Laravel, Gemini API, and MySQL stack. The user feedback survey results showed that patient autonomy empowering patients to opt for 24/7 AI conversation vs live telepsychiatry increases platform accessibility, reduces care-seeking stigma, and increases sustained user engagement. The 4 major goals of my work have been met completely. 
+This paper’s conclusion would include summarizing results obtained from study; making judgments based on those findings as well outlining suggestions for improvement/development. Systematic test plan execution (TC1-TC6) demonstrated the technical robustness, security, and data integrity of the React, Laravel, Gemini API, and MySQL stack. User feedback survey findings confirmed that patient autonomy-empowering individuals to choose between immediate 24/7 AI conversation and live telepsychiatry-enhances platform accessibility, mitigates care-seeking stigma, and drives sustained user engagement. All four core project objectives were
+0217|Heading 1|Chapter 6 – Conclusion
+0218|Normal|6.1 Summary of the Project
+0219|Normal|The study was successful at designing an implementation of patient directed mental health platform which is both online as well offline based on artificial intelligence assisted help system for psychiatrists. There is an obvious choice – use one app that has no access to psychiatrists at all (chatbot) vs another which does have them but costs a lot money & takes forever for appointments.
+0220|List Paragraph|For resolving that problem, we developed an integrated two care system with today’s advanced multilevel website design technology.
+0221|List Paragraph|Presentation Layer: Built with React.js to deliver a responsive Single-Page Application (SPA) offering immediate navigation between AI conversation and clinical consultations.
+0222|List Paragraph|Application and Security Layer Laravel 10, as a RESTful API gateway with RBAC and as a secure back-end proxy for external integrations.
+0223|List Paragraph|AI Conversational Engine integrated with the Google Gemini API, controlled by system prompt engineering to offer empathetic, non-diagnostic 24/7 emotional support and an automated Crisis Triage Engine.
+0224|List Paragraph|Driven by a MySQL scheduling database and WebRTC peer-to-peer streaming technology, telepsychiatric care allows for secure, encrypted video consultations without needing any third-party applications installed.
+0225|Normal|6.2 Conclusion
+0226|Normal|This study’s main argument is that integrating patients’ rights via an alternative pathway system substantially decreases obstacles for accessing psychological health care; these claims were proved true by our work. The empirical assessment as well as user experience test indicated people prefer a clear option available to them. The 24/7 Google Gemini AI companion is an essential, non-invasive first step that helps to ground patients when they are feeling a little stressed out and breaks away from stigma around getting medical attention. At same time also direct psychosomatic consultation system is an easy-to-use reliable way of getting proper medical attention from experts.
+0227|Normal|Engineering-wise this is about protecting your api keys with backends proxies & ensuring security measures are taken before generating responses from llms. To conclude then, this product is an effective bridge between online healthcare access; it provides scalability as well security while being compassionate enough to support evolving hybrid e-health solutions.
+0228|Normal|6.3 Limitations
+0229|Normal|Although it has met most of its goals there are some engineering as well as operating constraints to this venture.
+0230|List Paragraph|Third party api latency & rate limits Google Gemini API relies on external networks. API response times were between 1.5 and 3.0 seconds during peak traffic periods and frontend typing indicators were needed for a good user experience. During periods of high API traffic, response latency ranged between 1.5 to 3.0 seconds, requiring frontend typing indicators to maintain smooth user perception.
+0231|List Paragraph|Non diagnostic scope by design, the AI companion is non-diagnostic. This reduces healthcare responsibility but customers who want an automatic first-time diagnosis test need them directed by a doctor clinically.
+0232|List Paragraph|Usability Evaluation Sample Size Usability testing was done on a small number of representative users and physicians. Longitudinal, broader studies should be conducted for quantifying of chronic treatment effectiveness. While this mitigates medical liability, users seeking automated preliminary diagnostic evaluations must be manually redirected to clinical human providers.
+0233|List Paragraph|Building on what has been done so far here some directions of study as well as improvements can also be suggested. Implementation of Dedicated TURN Server Infrastructure Deploying self-hosted Coturn servers will guarantee 100% WebRTC video connection relay success in strict firewall networks and enterprise proxies. Passive biometrics and sentiments analysis, such as wearable devices’ heart rate variability measurements from a patient’s voice over an app could be used by the triage engine to detect signs of impending distress earlier than traditional methods do.
+0234|Normal|6.4 Future Work
+0235|Normal|Multi-modal LLM Integration Future versions will use multi-modal Gemini features (voice-to-voice audio streams) to support natural spoken dialogue with the AI companion, making it more accessible for visually impaired and elderly people.Clinical longitudinal study partnerships with health care facilities for conducting a series of controlled randomised controlled studies (rcs) over time would provide insights on chronic health care needs satisfaction as well as costs savings potential.Implementation of Dedicated TURN Server Infrastructure: Deploying self-hosted Coturn servers will guarantee 100% WebRTC video connection relay success across strict firewall networks and enterprise proxies. Chapter 6 summarized the project’s core contributions, concluding with reflections on the viability of patient-directed hybrid mental health platforms.This work has accomplished my objective of implementing artificial intelligence chatbots as well web rtc for psychiatrists’ consultations safely and flexibly enough to scale up accordingly.Also, some constraints of accessing networks as well as integration with apis have been discussed along with suggestions on how to expand both business & education sectors further.
+0236|Normal|6.5 Chapter Summary
+0237|Normal|Chapter 6 summarized the project's core contributions, presenting concluding reflections on the viability of patient-directed hybrid mental health platforms. The project successfully achieved its research aim by integrating AI conversational support with WebRTC telepsychiatry in a secure, scalable architecture. Finally, key limitations regarding network traversal and API dependencies were outlined, accompanied by actionable recommendations for future commercial and academic expansion.
+0238|Heading 1|Chapter 7 – Critical Evaluation and Professionalism
+0239|Normal|7.1 Overall Project
+0240|Normal|Patient directed mental health platform is an app that addresses these issues and includes 24/7 Google Gemini AI companion as well as a live WebRTC telepsychiatry app. Technically speaking as well functionally; this work accomplished what was required of them - an effective product which is safe enough for use by patients who have full control over their health-care processes.
+0241|Normal|The evaluation of our proposal according to seo principles shows reliability for a layered design with react js front-end, laravel rest api back end & mysql data base. Key technical milestones including client-side API key protection, automated crisis keyword triage interception, relational database integrity, and peer-to-peer video streaming were successfully implemented and validated through structured testing (Test Cases TC1 to TC6).
+0242|Normal|7.2 Project Planning and Management.
+0243|Normal|Agile Scrum Framework Adopting an Agile development process with 2-week sprint cycles allowed for progressive feature delivery, continuous integration, and rapid adjustment to technical roadblocks.
+0244|Normal|Clear Work Breakdown Structure (WBS) dividing the project into milestones Authentication, AI Integration, Booking Engine, WebRTC Streaming, Testing prevented scope creep and ensured steady progress.
+0245|Normal|Git & GitHub branching practices, main, feature, ai-chat, feature, webrtc, were used to maintain codebase stability and have clean rollback points for testing.
+0246|Normal|Initial Estimation of External Dependencies The complexity of integrating third-party APIs (Google Gemini) and managing WebRTC signaling logic was initially underestimated, requiring temporary reallocation of development time from UI styling to backend signaling.
+0247|Normal|Buffer allocation risk milestones were on schedule but there was a lack of buffers during sprint cycles due to unforeseen api limits from outside sources.
+0248|Normal|7.3 System Design
+0249|Normal|Back-end proxies are secure for protecting sensitive data like api key from being exposed on frontend javascript bundle by routing every request to our back-end proxy correctly.
+0250|Normal|Normalizing the MySQL database to 3rd Normal Form (3NF) ensured referential data integrity, eliminating data redundancy in user accounts, appointment schedules, and encrypted chat logs.
+0251|Normal|Component isolation clear separation between react frontend & laravel back-end allowed for easy handling with states as well as non-stateful apis.
+0252|Normal|Web rtc lacks redundancy with respect to turn server (TURN). In enterprise environments with symmetric firewalls, video connections can fail without a dedicated TURN (Traversal Using Relays around NAT) relay server.
+0253|Normal|Scaling state management react’s context api is fine enough that we can scale up later with redux toolkit if needed.
+0254|Normal|7.4 Development
+0255|Normal|Reusable Component Architecture UI elements (chat bubbles, doctor cards, modal dialogs) were created as reusable React components to promote code reusability and maintainability.
+0256|Normal|Service layer encapsulation - wrapping up health checks as an instance method on top for your triage engine (Laravel) kept things well separated, not directly inside controller layers.
+0257|Normal|Code coverage & refactoring some front-end events should be reworked for less duplication of code within api errors block.
+0258|Normal|Offline Support The app needs an ongoing internet connection; a pwa service worker will enable basic offline access to mood-tracking apps.
+0259|Normal|7.5 Testing and Quality Assurance.
+0260|Normal|Test suite execution comprehensive test cases TC1 to TC6 validated complete functionality of back-end controller, user interface navigation, api proxy security, database constraints, and safety triage rules.
+0261|Normal|100% Crisis intervention Rate Safety testing confirmed that the automated Triage Engine reliably intercepted high-risk statements and provided emergency helplines without delay.
+0262|Normal|Lack of auto-e2e frameworks testing is done by hand as well as with unit assertions. Implementing automated end-to-end (E2E) testing frameworks (such as Cypress or Playwright) would improve regression testing efficiency in future releases.
+0263|Normal|Load & stress test limitations were found out for a normal one-person usage of our system but there is no requirement to conduct such tests at web rtc sign-along process.
+0264|Normal|7.6 Time Management
+0265|Normal|On time milestone completion all key technical products as well as papers have been delivered on schedule for our course work deadline.
+0266|Normal|Effective Sprint Prioritization Core functional modules (Authentication, Gemini Proxy, and Triage) were prioritized during early sprints, leaving final sprints for UI polishing and report compilation.
+0267|Normal|Coding vs writing assignments balancing development time with coursework meant that most work was done at week’s end rather than earlier on average. There should be a better balance of programming as well as essay work to be done on next time around.
+0268|Normal|7.7 Research and Learning.
+0269|Normal|Skills Acquired
+0270|Normal|Full stack software engineering practical skill to pair up React js spas and Laravel rest api with secure token authentication (Sanctum).
+0271|Normal|LLM parameter knowledge, system instruction awareness, token control skills, and safe api proxy connection strategies are now better understood by me.
+0272|Normal|Hands on learning of real time stream protocol including web rtc api’s for offers answers from servers gathering candidates through ice & wsignting.
+0273|Normal|Healthcare information technology knowledge acquired skills on designing e-health products’ security needs; patients’ rights concepts as well as medical ethics limits.
+0274|Normal|Advanced Network Protocol Mastery Expanding theoretical knowledge of network traversal optimization, media codecs, VP8, H.264, and bandwidth throttling resilience in WebRTC calls.
+0275|Normal|7.8 Professional and ethical considerations.
+0276|Normal|Creating electronic health records requires compliance with highly specific professional, regulatory as well moral obligations.
+0277|Normal|Data Privacy and Confidentiality, GDPR, HIPAA Principles, Patient chat logs and personal identifiers stored in MySQL are protected via Role-Based Access Control (RBAC). The sensitive information including password is also encrypted with help of bcrypt algorithm so that no one can get them out easily.
+0278|Normal|Medical patient security & non-diagnostic ai boundaries are risks for hallucinations, inappropriate health care recommendations by artificial intelligence systems. For meeting healthcare responsibility requirements, our chatbots are programmed only for supportive conversation without diagnosis capabilities whatsoever.
+0279|Normal|Autonomous emergency response system includes an algorithmic triage engine which detects signs for suicide prevention thus meeting patients’ right-to-care obligations through convenient hotline integration options available on-site.
+0280|Normal|Informed consent transparency users have been clearly advised while entering their details about themselves, they know about being logged on with some artificial intelligence-based app called ‘AI companion’.
+0281|Normal|7.9 Personal Reflection
+0282|Normal|The development of patient directed mental health platform was an eye opening for me, as a cs & software engineer. This was a great chance for bridging theoretical concepts like relational databases modeling, rest api designs & stream processing with practical applications of those principles.
+0283|Normal|Technical challenges were associated with developing an ai assistant that worked as well, over real time web rtc psychiatry services; this involved acquiring novel tech skills but also keeping mind on ethics issues. Solving issues of api proxies, live video streaming was helpful for me as a solver. In fact, this assignment confirmed what i believed earlier about how effective technologies are if they were designed empathetically as well securely but also professionally enough for people’s benefit.
+0284|Normal|

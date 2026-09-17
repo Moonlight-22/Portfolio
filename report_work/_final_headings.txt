@@ -1,0 +1,130 @@
+=== c:\Users\User\Downloads\Telegram Desktop\HtetEaindraAung_2631547_Final Reprt.docx ===
+paragraphs: 599
+tables: 7
+sections: 1
+--- HEADINGS / STYLES ---
+0002 [Normal] Student Name: Htet Eaindra Aung
+0004 [Normal] Student Number: 2631547
+0006 [Normal] Module Code: 6CS007
+0008 [Normal] Module Name:  Project and Professionalism
+0010 [Normal] Project Title: Smart Patient Portal & Appointment Management System
+0012 [Normal] Module Leader Name: Alix Bergeret
+0014 [Normal] Supervisor Name: Dr. Myat Mon Aye
+0016 [Normal] Reader Name: Dr. Phyu Thwel
+0018 [Normal] Submission Date: 17.8.2026
+0019 [Normal] (The date you handed in the assessment)
+0021 [Normal] Award Title: Computer Science
+0022 [Normal] (Award Title for your project, if in doubt refer to your course/Module Registration)
+0026 [Heading 1] Declaration Sheet
+0028 [Normal] Presented in partial fulfilment of the assessment requirements for the above award.
+0030 [Normal] This work or any part thereof has not previously been presented in any form to the University or to any other institutional body whether for assessment or for other purposes. Save for any express ackn
+0032 [Normal] It is acknowledged that the author of any project work shall own the copyright.  However, by submitting such copyright work for assessment, the author grants to the University a perpetual royalty-free
+0034 [Normal] Student Name (Print): Htet Eaindra Aung
+0036 [Normal] Student Number: 2631547
+0038 [Normal] Signature: ……………Eaindra………………………..…….        Date: …17/8/2026………
+0039 [Normal] (Must include the unedited statement above. Sign and date)
+0041 [Normal] Please use an electronic signature (scan and insert)
+0044 [Heading 1] Abstract
+0046 [Normal] Despite the modernization of the healthcare sector, the appointment scheduling for local clinics remains largely manual, with most of them using phones to register patients and having to deal with wal
+0048 [Normal] The research question for this project is: How effective is a digital booking system in enhancing the availability of medical checkup packages for local clinics and patients? The implementation of the
+0050 [Normal] The system is designed with a three-tier architecture, integrates JWT based authentication, RESTful APIs and soft-delete data management to satisfy both functional requirements and legal obligation of
+0053 [Heading 1] Chapter 1: Introduction
+0054 [Heading 2] Background of the Project
+0055 [Normal] Clinical operations are one of the primary tasks that are performed in a healthcare organization. In most developed and developing countries manual scheduling (walking and talking) is still a primary 
+0056 [Normal] The increasing digitalization of the healthcare industry has presented the chance to completely reimagine the patient booking process. In academic studies, mobile apps have been demonstrated to cut do
+0058 [Heading 2] Academic Question
+0059 [Normal] To what extent does a digital booking platform improve the accessibility of medical checkup packages for local clinics and patients?
+0060 [Normal] This question underpins the entire research and development effort, providing a focal point for both the literature review and the evaluation of the artefact produced.
+0062 [Heading 2] Aims and Objectives
+0063 [Heading 3] Aims
+0065 [List Paragraph] To increase the availability of and convenience for patients when scheduling appointments digitally.
+0066 [List Paragraph] To minimize access needs to local health care providers.
+0067 [List Paragraph] To measure the impact of the digital booking platform on patients' access to medical checkup appointments.
+0068 [Heading 3] Objectives
+0070 [List Paragraph] Develop a mobile-based digital booking system that allows the patients to view and book available medical checkup packages.
+0071 [List Paragraph] Develop a web-based dashboard for doctors or clinic staff to view and manage appointments and schedules in real time.
+0072 [List Paragraph] Create and host a secure Web Server Development Backend using NestJS RESTful API with JWT authentication to connect the mobile and Web Clients with PostgreSQL Database.
+0073 [List Paragraph] Obtain user feedback using an organized survey to assess the effectiveness, usability and patient satisfaction of the system.
+0074 [List Paragraph] Critically assess the effect of the system on the access to health care and make conclusions for the academic question.
+0075 [Heading 2] Overview of the Artefact
+0076 [List Paragraph] The main artefact created in this project is a fully developed clinic scheduling system that includes three integrated parts:
+0077 [List Paragraph] React Native (Expo) mobile app for patients to browse, book, remind and manage appointments.
+0078 [List Paragraph] Next.js Web Dashboard for clinic administrators and doctors, where they can manage their schedules, monitor appointments, and oversee medical packages.
+0079 [List Paragraph] A secure, structured backend API layer built with NestJS and integrated with a PostgreSQL database, offering data management for both client applications.
+0082 [Heading 2] Research Methods
+0085 [Heading 2] Scope and Limitations
+0088 [Heading 2] Report Structure
+0092 [Heading 1] Chapter 2: Literature Review
+0093 [Heading 2] 2.1 Introduction to Digital Healthcare Appointment Systems
+0097 [Heading 2] 2.2 Limitations of Traditional Appointment Systems
+0103 [Heading 2] 2.3 Mobile Healthcare Applications
+0106 [Heading 2] 2.4 Web-Based Systems and Administrative Efficiency
+0109 [Heading 2] 2.5 Communication Technologies in Healthcare Scheduling
+0111 [Heading 2] 2.6 Patient Satisfaction and Adoption Barriers
+0115 [Heading 2] 2.7 Algorithmic and Predictive Scheduling
+0118 [Heading 2] 2.8 Research Gap
+0123 [Heading 2] 2.9 Summary
+0130 [Heading 1] Chapter 3: Artefact Design and Architecture
+0131 [Heading 2] 3.1 System Overview
+0135 [Heading 2] 3.2 System Architecture
+0140 [Heading 2] 3.3 Technology Stack Justification
+0142 [Heading 2] 3.4 Database Design – Entity Relation Model
+0146 [Heading 2] 3.5 Use Case Design
+0165 [Heading 2] 3.6 Flow Chart Diagram
+0169 [Heading 2] 3.7 Activity Diagram
+0173 [Heading 2] 3.8 Security and GDPR Compliance Design
+0180 [Heading 2] 3.9 UI/UX Design – Wireframes
+0266 [Heading 1] Chapter 4: Development and Implementation
+0267 [Heading 2] 4.1 Development Methodology
+0271 [Heading 2] 4.2 Development Environment and Repository Structure
+0276 [Heading 2] 4.3 Backend Implementation – NestJS API
+0283 [Heading 2] 4.4 Database Implementation – PostgreSQL
+0287 [Heading 2] 4.5 Mobile Application Implementation – Expo React Native
+0298 [Heading 2] 4.6 Web Dashboard Implementation – Next.js
+0308 [Heading 2] 4.7 Notification System
+0311 [Heading 2] 4.8 Challenges and Solutions
+0317 [Heading 1] Chapter 5: Testing and Evaluation
+0318 [Heading 2] 5.1 Testing Strategy
+0321 [Heading 2] 5.2 Design Artefact Testing
+0323 [Heading 2] 5.3 Functional Test Cases
+0363 [Heading 2] 5.4 User Survey Evaluation
+0366 [Heading 3] 5.4.1. Key Survey Findings
+0376 [Heading 3] 5.4.2 Qualitative Feedback
+0382 [Heading 1] Chapter 6: Addressing the Academic Question
+0383 [Heading 2] 6.1 Revisiting the Academic Question
+0387 [Heading 2] 6.2 Evidence from the Literature
+0391 [Heading 2] 6.3 Evidence from the Artefact
+0396 [Heading 2] 6.4 Evidence from the User Survey
+0400 [Heading 2] 6.5 Conclusion on the Academic Question
+0414 [Heading 1] Chapter 7: Conclusions
+0416 [Heading 2] 7.1 Summary of Findings
+0419 [Heading 2] 7.2 Achievement of Aims and Objectives
+0430 [Heading 2] 7.3 What Has Been Discovered
+0434 [Heading 2] 7.4 Directions for Further Work
+0441 [Heading 1] Chapter 8: Critical Evaluation and Self-Reflection
+0443 [Heading 2] 8.1 Critical Evaluation of the Artefact
+0448 [Heading 2] 8.2 Critical Evaluation of the Report
+0451 [Heading 2] 8.3 Critical Evaluation of the Process
+0456 [Heading 2] 8.4 Quality of Sources
+0459 [Heading 2] 8.5 Self-Reflection
+0465 [Heading 1] Chapter 9: Evidence of Project Management
+0466 [Heading 2] 9.1 Project Timeline and Milestones
+0469 [Heading 2] 9.2 Gantt Chart Summary
+0471 [Heading 2] 9.3 Risk Management
+0472 [Heading 2] 9.4 Log Book Met
+0506 [Heading 2] 9.4 Gantt Charts
+0511 [Heading 2] 9.5 GitHub Repository
+0516 [Heading 1] References
+0528 [Heading 1] Appendices
+0529 [Heading 2] Appendix A: User Survey Questions
+0546 [Normal] 4.I found the process of booking an appointment online more convenient than calling         or visiting the clinic in person.
+0548 [Normal] 5.The digital platform improved my ability to access healthcare services when I needed
+0558 [Normal] 9.How likely are you to recommend this digital booking method to a friend?
+0574 [Heading 2] 13.What is the most useful feature of the Smart Patient Portal?
+0575 [Heading 2] Long answer text
+0580 [Heading 2] Appendix B: System Diagram Descriptions
+0581 [Heading 3] B1. System Architecture
+0584 [Heading 3] B2. ER Diagram
+0587 [Heading 3] B3. Use Case Summary
+0590 [Heading 2] Appendix C: GitHub Repository Links
+0594 [Heading 2] Appendix D: Ethical Considerations Form

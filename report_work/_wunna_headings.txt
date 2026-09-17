@@ -1,0 +1,120 @@
+0000|Normal|Add Header
+0001|Normal|Final Project Report
+0002|Normal|Student Name: Wunna Kyaw
+0003|Normal|Student Number: 209817
+0004|Normal|Location/Site: City Campus
+0005|Normal|Module Code: 6CS007/FM2
+0006|Normal|Module Name: Project and Professionalism
+0007|Normal|Project Title: Future Trading Signal
+0008|Normal|Module Leader Name: Fill
+0009|Normal|Supervisor Name:
+0010|Normal|Reader Name:
+0011|Normal|Submission Date: August 2026
+0012|Normal|(The date the assessment was handed in)
+0013|Normal|Award Title: B.Sc. (Hons) Computer Science
+0014|Normal|(Award title for the project; if in doubt refer to course or module registration)
+0016|Heading 1|Declaration Sheet
+0017|Normal|Presented in partial fulfilment of the assessment requirements for the above award.
+0018|Normal|This work or any part thereof has not previously been presented in any form to the University or to any other institutional body whether for assessment or for other purposes. Save for any express ackn
+0019|Normal|It is acknowledged that the author of any project work shall own the copyright. However, by submitting such copyright work for assessment, the author grants to the University a perpetual royalty-free 
+0020|Normal|Student Name (Print): Wunna Kyaw
+0021|Normal|Student Number: 209817
+0022|Normal|Signature: ..............................          Date: ............
+0023|Normal|(Must include the unedited statement above. Sign and date)
+0024|Normal|Please use an electronic signature (scan and insert)
+0026|Heading 1|Table of Contents (structure)
+0027|Normal|Insert template
+0028|Normal|Chapter 1: Introduction - 1.1 Motivation - 1.2 Algorithmic Trading Signals - 1.3 Technologies Overview - 1.4 Academic Question, Aim, Objectives - 1.5 Scope and Limitations - 1.6 Report Framework - 1.7
+0029|Normal|Chapter 2: Literature Review - 2.1 Introduction - 2.2 What Was Read for This Project - 2.3 Background Theory with Citations - 2.4 Related Systems and Critiques - 2.5 Research Gap - 2.6 Design Features
+0030|Normal|Chapter 3: System Design and Development - 3.1 Requirements - 3.2 Use Cases - 3.3 Architecture - 3.4 Data Model - 3.5 Interface Design - 3.6 Summary
+0031|Normal|Chapter 4: Implementation and Testing - 4.1 Tools and Environment - 4.2 Build Process - 4.3 Module Implementation (4.3.1 Auth/RBAC - 4.3.2 CNN - 4.3.3 LSTM - 4.3.4 Hybrid CNN-LSTM - 4.3.5 Features/XGB
+0032|Normal|Chapter 5: Testing and Evaluation - 5.1 Functional Outcomes - 5.1.1 Black-Box Testing Table - 5.2 Accuracy and Evaluation Methods (Evaluation 1, 2, 3 with tables/charts/graphs) - 5.3 Paper Simulation 
+0033|Normal|Chapter 6: Conclusion - 6.1 Achievements Against Objectives - 6.2 Answer to Academic Question - 6.3 Limitations - 6.4 Future Work
+0034|Normal|Chapter 7: Critical Evaluation and Professionalism - 7.1 Process Reflection - 7.2 Ethics and Risk Communication - 7.3 Legal and Academic Integrity - 7.4 Summary
+0035|Normal|References
+0036|Normal|Appendix A: Glossary of Terms
+0037|Normal|Appendix B: Reproducibility Notes
+0038|Normal|Appendix C: Extra Assessor Notes
+0040|Normal|Future Trading Signal
+0041|Normal|Student: Wunna Kyaw (209817)
+0042|Normal|Award: B.Sc. (Hons) Computer Science - University of Wolverhampton
+0043|Normal|Email: W.Kyaw@wlv.ac.uk
+0045|Heading 1|Abstract
+0046|Normal|This report introduces a hybrid trading signal web application for paper trading called Future Trading Signal. Using a Convolutional Neural Network (CNN), local shapes are recognised in candle windows
+0047|Heading 1|Keywords: hybrid AI, CNN-LSTM, FinBERT, XGBoost, algorithmic trading signals, paper trading, break-retest, decision support, risk management, Project and Professionalism.
+0059|Heading 1|Chapter 1: Introduction
+0060|Heading 2|1.1 Project Motivation
+0061|Normal|Retail's involvement in international financial market has grown significantly. A major practical issue that many new traders encounter is that price charts are constantly changing, news reports occur
+0062|Normal|Reading the Long Short-Term Memory paper was helpful in understanding the forgetting of long candle context and the role of gated memory in sequence learning (Li and Zhang, 2025; Algorithms hybrid dee
+0063|Normal|There was also a motivation based on noting student prototypes that would go one step further, predicting the next candle without modelling the whole trade cycle, or hiding model logic behind opaque a
+0064|Normal|Professionalism constraints influenced initial decisions, from a systems perspective. The prototype takes the form of paper money, risk recognition and separation of roles, and not being confused with
+0065|Heading 2|1.2 Introduction to Algorithmic Trading Signals and Decision Support
+0066|Normal|Algorithmic trading signal systems are intermediaries between actual market data and human decision-making. The indicators employed in classic technical analysis are Exponential Moving Average (EMA), 
+0067|Normal|Figure 1.1. Trading candles (OHLC): each bar shows open, high, low and close.
+0068|Normal|Decision-support platforms are not bot platforms that work by themselves. They offer confidence, the geometry of risk and reward, and they decline to pull the trigger on bad setups until they're full.
+0069|Heading 2|1.3 Overview of Trading Technologies and Digital Market Intelligence Solutions
+0070|Normal|Contemporary: In this section: currently common practice in student and industry prototypes: Browser dashboard, REST API, Database, Live market adapters, Offline historical candle archives for trainin
+0071|Normal|The prototype deployed includes Apache, MySQL, using XAMPP, a PHP restful router under the /project/api folder, a Vite React single page application for the trader and admin experience and a Python Fa
+0072|Normal|In order to use the models you need to download them from the internet, for example from the website. The example artefacts are: cnn_lstm.pt is a neural network model file (CNN); meta_xgb.joblib is a 
+0073|Heading 2|1.4 Academic Question, Aim and Objectives
+0074|Heading 3|1.4.1 Academic Question
+0075|Normal|Is there any possibility to limit false signals in financial trading with the combination of automated market sentiment analysis and technical pattern recognition? In this artefact, the question is te
+0076|Heading 3|1.4.2 Aim
+0077|Normal|To develop, test, and record a hybrid-intelligence web application with high-probability decision-support trading signals (Entry, stop-loss, take-profit near 1:3 risk-reward) for crypto, forex and som
+0078|Heading 3|1.4.3 Objectives
+0079|List Paragraph|Build a data pipeline to receive "live" and "historical" candles (Binance / Vision / Yahoo / Frankfurter) and optionally news headlines.
+0085|Heading 3|1.4.4 Success Criteria Linked to Objectives
+0087|Heading 2|1.5 Scope and Limitations
+0092|Heading 2|1.6 Report Framework
+0094|Heading 2|1.7 Summary
+0096|Heading 1|Chapter 2: Literature Review
+0133|Heading 1|Chapter 3: System Design and Development
+0134|Heading 2|3.1 Requirements Overview
+0137|Heading 2|3.2 Use Cases and Actors
+0146|Heading 2|3.3 Architecture
+0150|Heading 3|3.3.1 Development method used in this project
+0154|Heading 3|3.3.2 Design diagrams from the project artefact
+0158|Heading 3|3.3.3 Class diagram
+0172|Heading 3|3.3.4 Flow Diagram
+0176|Heading 3|3.3.5 Activity Diagram
+0180|Heading 3|3.3.6 Behavior Diagrams
+0193|Heading 2|3.4 Data Model and Market Data
+0196|Heading 2|3.5 Interface Design
+0204|Heading 2|3.6 Summary
+0206|Heading 1|Chapter 4: Implementation and Testing
+0207|Heading 2|4.1 Tools and Environment
+0209|Heading 2|4.2 Build and Learning Process
+0211|Heading 2|4.3 Module Implementation
+0212|Heading 3|4.3.1 Authentication, RBAC and Risk Gate
+0229|Heading 3|4.3.5 Feature Engineering, Meta Model and Sentiment
+0231|Heading 3|4.3.6 Paper Trading Persistence
+0233|Heading 2|4.4 Testing Strategy: Planned Versus Done
+0235|Heading 3|4.4.1 Unit and Script Checks
+0237|Heading 3|4.4.2 Black-Box Testing
+0241|Heading 3|4.4.3 Integration Testing
+0243|Heading 3|4.4.4 Backtesting and Historical Evaluation
+0245|Heading 3|4.4.5 Usability and Demo Checks
+0247|Heading 3|4.4.6 Artefact Testing Proof Summary
+0254|Heading 2|4.5 Summary
+0256|Heading 1|Chapter 5: Testing and Evaluation
+0257|Heading 2|5.1 Functional Outcomes
+0280|Heading 2|5.2 Accuracy and Evaluation Methods
+0281|Heading 3|5.2.1 Evaluation 1 — XGBoost meta hold-out accuracy
+0296|Heading 3|5.2.2 Evaluation 2 — CNN-LSTM training-objective metric
+0299|Heading 3|5.2.3 Evaluation 3 — Paper simulation win rate and data scale
+0301|Heading 2|5.3 Paper Simulation Limits (Clear Reporting)
+0304|Heading 2|5.4 Discussion Against the Academic Question
+0307|Heading 2|5.5 Summary
+0309|Heading 1|Chapter 6: Conclusion
+0310|Heading 2|6.1 Achievements Against Objectives
+0322|Heading 2|6.2 Answer to the Academic Question
+0324|Heading 2|6.3 Limitations
+0326|Heading 2|6.4 Future Work
+0349|Heading 1|Chapter 7: Critical Evaluation and Professionalism
+0350|Heading 2|7.1 Process Reflection
+0353|Heading 2|7.2 Ethics and Risk Communication
+0355|Heading 2|7.3 Legal and Academic Integrity
+0358|Heading 2|7.4 Summary
+0360|Heading 1|References
+0381|Heading 1|Appendix A: Glossary of Terms
+0397|Heading 1|Appendix B: Reproducibility Notes
