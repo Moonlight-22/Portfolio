@@ -1,5 +1,5 @@
 import ProfileImage from '../../assets/images/Profile_pic.png'
-import cv from '../../assets/file/Aung_Myat_Min_CV.pdf-1.pdf'
+import cv from '../../assets/file/Aung Myat Min CV .pdf'
 import { motion } from 'framer-motion'
 import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa'
 
