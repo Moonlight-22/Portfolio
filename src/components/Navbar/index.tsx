@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import ThemeToggle from '../ThemeToggle'
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -42,10 +41,10 @@ export default function Navbar() {
           key={link.href}
           href={link.href}
           onClick={() => setOpen(false)}
-          className={`rounded-full px-4 py-2 text-sm transition ${
+          className={`rounded-full px-4 py-2 text-sm font-medium transition-all duration-200 ${
             active === link.href.slice(1)
-              ? 'bg-violet-600 text-white'
-              : 'text-slate-700 hover:bg-slate-200 dark:text-slate-200 dark:hover:bg-slate-800'
+              ? 'bg-violet-600 text-white shadow-[0_0_30px_rgba(168,85,247,0.45)]'
+              : 'text-slate-300 hover:bg-white/5 hover:text-white'
           }`}
         >
           {link.label}
@@ -55,20 +54,18 @@ export default function Navbar() {
   )
 
   return (
-    <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur-xl dark:border-slate-800 dark:bg-slate-950/70">
-      <div className="h-1 bg-violet-500 transition-all" style={{ width: `${progress}%` }} />
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
+      <div className="h-1 bg-gradient-to-r from-violet-500 via-fuchsia-400 to-indigo-500 transition-all duration-200" style={{ width: `${progress}%` }} />
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-        <a href="#home" className="text-lg font-bold tracking-tight">
+        <a href="#home" className="text-lg font-bold tracking-[0.12em] text-white">
           Portfolio
         </a>
 
         <div className="hidden items-center gap-2 md:flex">
           {navItems}
-          <ThemeToggle />
         </div>
 
         <div className="flex items-center gap-2 md:hidden">
-          <ThemeToggle />
           <button
             type="button"
             onClick={() => setOpen((prev) => !prev)}
@@ -81,7 +78,11 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {open ? <div className="flex flex-col gap-2 border-t border-slate-200 px-4 py-4 md:hidden dark:border-slate-800">{navItems}</div> : null}
+      {open ? (
+        <div className="flex flex-col gap-2 border-t border-white/10 px-4 py-4 md:hidden">
+          {navItems}
+        </div>
+      ) : null}
     </header>
   )
 }

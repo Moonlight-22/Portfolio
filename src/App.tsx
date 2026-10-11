@@ -11,9 +11,10 @@ import ContactSection from './sections/Contact'
 
 function PortfolioPage() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 transition-colors dark:bg-slate-950 dark:text-slate-100">
+    <div className="dark relative min-h-screen overflow-x-clip bg-slate-950 text-slate-100 selection:bg-violet-500/40 selection:text-white">
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(168,85,247,0.18),_transparent_32%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.12),_transparent_28%)]" />
       <Navbar />
-      <main>
+      <main className="relative">
         <HomeSection />
         <AboutSection />
         <SkillsSection />

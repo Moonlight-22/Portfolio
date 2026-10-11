@@ -1,7 +1,7 @@
 const experiences = [
-  { year: '2026', title: 'Frontend Developer', description: 'Built responsive and accessible user interfaces for production apps.' },
-  { year: '2025', title: 'Full Stack Intern', description: 'Worked on React and Spring Boot modules with reusable architecture.' },
-  { year: '2024', title: 'CS Student Projects', description: 'Developed AI and web projects focused on practical outcomes.' },
+  { year: '2025', title: 'Freelance Developer and Computer Tutor', description: 'Built responsive and accessible UI for production apps and Conducted courses on basic to advanced, and system maintenance best practices.' },
+  { year: '2024', title: 'Freelance Graphic Designer', description: 'Delivered detailed visual content and marketing collaterals using Figma, Canva, and Adobe tools. ' },
+  { year: '2023', title: 'IT Support Specialist', description: 'Provided first-line technical support, system maintenance, and network troubleshooting for office workstations. ' },
 ]
 
 export default function Timeline() {

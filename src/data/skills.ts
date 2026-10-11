@@ -26,7 +26,11 @@ export const skills: SkillCategory[] = [
   },
   {
     category: 'Database',
-    items: [{ name: 'MySQL', level: 82 }],
+    items: [
+      { name: 'MySQL', level: 82 },
+      { name: 'PostgreSQL', level: 80 },
+      { name: 'Superbase', level: 75 },
+    ],
   },
   {
     category: 'Machine Learning',
@@ -44,6 +48,22 @@ export const skills: SkillCategory[] = [
       { name: 'Android Studio', level: 75 },
       { name: 'VS Code', level: 93 },
       { name: 'Figma', level: 70 },
+      { name: 'Postman', level: 85 },
+      { name: 'Docker', level: 80 },
+      {name: 'StarUML', level: 95}
     ],
   },
+  {
+    category: 'AI and Productivity Tools',
+    items: [
+      { name: 'Gemini', level: 88 },
+      { name: 'ChatGPT', level: 90 },
+      { name: 'Qwen', level: 75 },
+      { name: 'Cursor', level: 93 },
+      { name: 'DaVenci', level: 70 },
+      {name:'Canva', level: 80},
+      {name:'Adobe Photoshop', level: 85},
+      {name:'Adobe Illustrator', level: 80}
+    ],
+  }
 ]

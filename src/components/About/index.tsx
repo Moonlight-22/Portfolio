@@ -14,7 +14,7 @@ export default function About() {
             interfaces. My interests span web engineering, AI-assisted products, and scalable frontend systems.
           </p>
           <h4 className="mt-5 text-lg font-semibold">Education</h4>
-          <p className="mt-2 text-slate-600 dark:text-slate-300">B.Sc. in Computer Science (Ongoing)</p>
+          <p className="mt-2 text-slate-600 dark:text-slate-300">B.Sc. in Computer Science</p>
           <h4 className="mt-5 text-lg font-semibold">Career Objective</h4>
           <p className="mt-2 text-slate-600 dark:text-slate-300">
             To contribute to impactful products as a frontend/full-stack engineer while continuously improving software
