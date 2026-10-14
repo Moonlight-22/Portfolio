@@ -16,7 +16,7 @@ export default function ScrollToTop() {
     <button
       type="button"
       onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-      className="fixed bottom-5 right-5 z-50 rounded-full bg-violet-600 p-3 text-white shadow-lg transition hover:scale-105 hover:bg-violet-500"
+      className="fixed bottom-20 right-5 z-50 rounded-full bg-sky-600 p-2.5 text-sm text-white shadow-lg transition hover:scale-105 hover:bg-sky-500 md:bottom-5 md:p-3 md:text-base"
       aria-label="Scroll to top"
     >
       <FaChevronUp />

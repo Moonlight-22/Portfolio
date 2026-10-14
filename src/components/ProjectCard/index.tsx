@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa'
+import { FaGithub } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import type { Project } from '../../data/projects'
 
 type Props = {
@@ -10,7 +11,7 @@ export default function ProjectCard({ project }: Props) {
   return (
     <motion.article
       whileHover={{ y: -6 }}
-      className="overflow-hidden rounded-3xl border border-white/20 bg-white/70 shadow-lg transition dark:bg-slate-900/70"
+      className="overflow-hidden rounded-3xl border border-white/15 bg-white/70 shadow-lg transition dark:bg-[#11151b]"
     >
       <img src={project.image} alt={project.title} loading="lazy" className="h-48 w-full object-cover" />
       <div className="p-5">
@@ -18,7 +19,7 @@ export default function ProjectCard({ project }: Props) {
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{project.description}</p>
         <div className="mt-4 flex flex-wrap gap-2">
           {project.technologies.map((tech) => (
-            <span key={tech} className="rounded-full bg-violet-100 px-3 py-1 text-xs font-semibold text-violet-700 dark:bg-violet-500/20 dark:text-violet-200">
+            <span key={tech} className="rounded-full bg-sky-100 px-3 py-1 text-xs font-semibold text-sky-800 dark:bg-sky-500/15 dark:text-sky-200">
               {tech}
             </span>
           ))}
@@ -27,9 +28,9 @@ export default function ProjectCard({ project }: Props) {
           <a href={project.githubUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full border border-slate-300 px-4 py-2 text-sm dark:border-slate-700">
             <FaGithub /> GitHub
           </a>
-          <a href={project.liveUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-full bg-violet-600 px-4 py-2 text-sm text-white">
-            <FaExternalLinkAlt /> Document                                                                                                                                                                                                               
-          </a>
+          <Link to={`/documents/${project.id}`} className="inline-flex items-center gap-2 rounded-full bg-sky-600 px-4 py-2 text-sm text-white transition hover:bg-sky-500">
+            Document
+          </Link>
         </div>
       </div>
     </motion.article>

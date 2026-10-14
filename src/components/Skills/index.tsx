@@ -23,7 +23,7 @@ export default function Skills() {
                       whileInView={{ width: `${skill.level}%` }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.8 }}
-                      className="h-2 rounded-full bg-gradient-to-r from-violet-500 to-cyan-500"
+                      className="h-2 rounded-full bg-gradient-to-r from-blue-500 to-sky-300"
                     />
                   </div>
                 </div>

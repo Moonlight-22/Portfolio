@@ -22,7 +22,7 @@ export default function ProjectsSection() {
             onClick={() => setFilter(item)}
             className={`rounded-full px-4 py-2 text-sm ${
               filter === item
-                ? 'bg-violet-600 text-white'
+                ? 'bg-sky-600 text-white'
                 : 'border border-slate-300 text-slate-700 dark:border-slate-700 dark:text-slate-200'
             }`}
           >

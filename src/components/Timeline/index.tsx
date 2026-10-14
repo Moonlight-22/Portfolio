@@ -6,11 +6,11 @@ const experiences = [
 
 export default function Timeline() {
   return (
-    <ol className="relative space-y-6 border-l border-violet-300 pl-6 dark:border-violet-700">
+    <ol className="relative space-y-6 border-l border-sky-300/50 pl-6 dark:border-sky-700">
       {experiences.map((item) => (
         <li key={item.year + item.title} className="relative">
-          <span className="absolute -left-[1.8rem] top-1 h-3 w-3 rounded-full bg-violet-500" />
-          <p className="text-sm font-semibold text-violet-500">{item.year}</p>
+          <span className="absolute -left-[1.8rem] top-1 h-3 w-3 rounded-full bg-sky-500" />
+          <p className="text-sm font-semibold text-sky-400">{item.year}</p>
           <h3 className="mt-1 text-xl font-bold">{item.title}</h3>
           <p className="mt-1 text-slate-600 dark:text-slate-300">{item.description}</p>
         </li>
