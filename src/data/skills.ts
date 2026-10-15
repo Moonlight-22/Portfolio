@@ -12,6 +12,7 @@ export const skills: SkillCategory[] = [
       { name: 'HTML', level: 95 },
       { name: 'CSS', level: 90 },
       { name: 'Tailwind', level: 88 },
+      { name: 'Bootstrap', level: 85 },
     ],
   },
   {
@@ -22,6 +23,7 @@ export const skills: SkillCategory[] = [
       { name: 'Python', level: 85 },
       { name: 'Flask', level: 75 },
       { name: 'PHP', level: 70 },
+      { name: 'Laravel', level: 70 },
     ],
   },
   {
@@ -29,7 +31,7 @@ export const skills: SkillCategory[] = [
     items: [
       { name: 'MySQL', level: 82 },
       { name: 'PostgreSQL', level: 80 },
-      { name: 'Superbase', level: 75 },
+      { name: 'Supabase', level: 75 },
     ],
   },
   {
@@ -60,7 +62,7 @@ export const skills: SkillCategory[] = [
       { name: 'ChatGPT', level: 90 },
       { name: 'Qwen', level: 75 },
       { name: 'Cursor', level: 93 },
-      { name: 'DaVenci', level: 70 },
+      { name: 'DaVinci Resolve', level: 70 },
       {name:'Canva', level: 80},
       {name:'Adobe Photoshop', level: 85},
       {name:'Adobe Illustrator', level: 80}

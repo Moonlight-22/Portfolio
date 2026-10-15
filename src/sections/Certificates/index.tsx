@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function CertificatesSection() {
   return (
     <section id="certificates" className="mx-auto max-w-6xl px-4 py-16 md:px-6">
-      <SectionTitle eyebrow="Certificates" title="Certifications" subtitle="A responsive showcase of recent learning and achievements." />
+      <SectionTitle eyebrow="Certificates" title="Certifications" />
       <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {certificates.map((certificate) => (
           <Link

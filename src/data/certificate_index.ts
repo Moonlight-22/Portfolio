@@ -5,6 +5,7 @@ export type CertificateIndexItem = {
 	id: string
 	title: string
 	issuer: string
+	status?: string
 	image: string
 	url: string
 }
@@ -26,8 +27,9 @@ export const certificateIndex: CertificateIndexItem[] = [
 	},
 	{
 		id: 'bachelor-computer-science',
-		title: 'Bachelor of Science in Computer Science',
-		issuer: 'Strategy First University/University of Wolverhampton (UK)/Currently Waiting for Certificate',
+		title: 'Bachelor of Science (Hons) in Computer Science',
+		issuer: 'Strategy First University / University of Wolverhampton (UK)',
+		status: 'Currently waiting for certificate',
 		image:
 			'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop',
 		url: 'https://example.com',

@@ -7,7 +7,6 @@ export default function ContactSection() {
       <SectionTitle
         eyebrow="Contact"
         title="Let’s Connect"
-        subtitle="Have an idea, a collaboration, or a new opportunity? Send a quick message and I’ll get back to you soon."
       />
       <ContactForm />
     </section>

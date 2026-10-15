@@ -26,7 +26,13 @@ export default function CertificateDetailSection() {
         <div>
           <p className="text-sm font-semibold uppercase text-sky-300">Certificate details</p>
           <h1 className="mt-2 text-3xl font-bold md:text-4xl">{certificate.title}</h1>
-          <p className="mt-4 leading-7 text-slate-300">{certificate.issuer}</p>
+          <p className="mt-4 text-left leading-7 text-slate-300">{certificate.issuer}</p>
+          {certificate.status ? (
+            <div className="mt-5 rounded-xl border border-amber-400/20 bg-amber-400/10 p-4 text-left">
+              <p className="text-xs font-semibold uppercase tracking-wide text-amber-300">Certificate status</p>
+              <p className="mt-1 text-sm font-medium text-amber-100">{certificate.status}</p>
+            </div>
+          ) : null}
         </div>
         <img src={certificate.image} alt={certificate.title} className="w-full rounded-lg border border-white/10 bg-white p-2 object-contain" />
       </div>

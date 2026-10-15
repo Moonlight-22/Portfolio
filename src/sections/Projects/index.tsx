@@ -13,7 +13,7 @@ export default function ProjectsSection() {
 
   return (
     <section id="projects" className="mx-auto max-w-6xl px-4 py-16 md:px-6">
-      <SectionTitle eyebrow="Projects" title="Featured Projects" subtitle="Reusable project cards with hover interaction and tech filtering." />
+      <SectionTitle eyebrow="Projects" title="Featured Projects" />
       <div className="mb-6 flex flex-wrap gap-2">
         {technologies.map((item) => (
           <button

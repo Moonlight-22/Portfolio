@@ -41,7 +41,7 @@ export default function ContactForm() {
       <div className="relative z-20 rounded-[28px] border border-sky-500/15 bg-[radial-gradient(circle_at_top,_rgba(30,64,175,0.2),_rgba(17,21,27,0.97)_34%,_rgba(5,7,10,1)_100%)] p-4 shadow-[0_25px_90px_rgba(0,0,0,0.7)] transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_35px_120px_rgba(30,64,175,0.16)] md:rounded-[32px] md:p-8">
         <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <p className="max-w-xl text-sm leading-6 text-slate-200 md:text-lg md:leading-relaxed">
-            I’m open to project discussions, collaborations, and business opportunities.
+            I’m open to project and job discussions, collaborations, and business opportunities.
           </p>
 
           <button
