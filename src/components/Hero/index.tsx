@@ -15,7 +15,7 @@ export default function Hero() {
           Aung Myat Min
         </h1>
         <h2 className="mt-2 text-3xl font-normal leading-tight tracking-tight text-slate-100 sm:text-4xl md:text-5xl">
-          <span>IT Support</span>
+          <span>IT Support &</span>
           <br className="sm:hidden" />{' '}
           <span className="font-bold text-sky-400">Full-Stack Developer</span>
         </h2>
