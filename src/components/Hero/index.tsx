@@ -9,7 +9,7 @@ export default function Hero() {
         initial={{ opacity: 0, x: -24 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
-        className="relative z-10 order-2 text-left md:order-1"
+        className="relative z-10 order-1 text-left md:order-1"
       >
         <div className="md:block">
           <h1 className="text-2xl font-black leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-7xl">
@@ -54,7 +54,7 @@ export default function Hero() {
         initial={{ opacity: 0, x: 24 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.7 }}
-        className="relative order-1 mx-auto aspect-[768/1309] w-[12rem] sm:w-[14rem] md:order-2 md:w-[18rem]"
+        className="relative order-2 mx-auto aspect-[768/1309] w-[12rem] sm:w-[14rem] md:order-2 md:w-[18rem]"
       >
         <div className="relative h-full w-full">
           <img
