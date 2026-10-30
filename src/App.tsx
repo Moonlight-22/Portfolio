@@ -1,5 +1,5 @@
-import type { PropsWithChildren } from 'react'
-import { Route, Routes } from 'react-router-dom'
+import { useLayoutEffect, type PropsWithChildren } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import ScrollToTop from './components/ScrollToTop'
@@ -12,13 +12,29 @@ import ContactSection from './sections/Contact'
 import DocumentDetailSection from './sections/DocumentDetail'
 import CertificateDetailSection from './sections/CertificateDetail'
 
-function SiteLayout({ children }: PropsWithChildren) {
+function ScrollSecondaryPagesToTop() {
+  const { pathname } = useLocation()
+
+  useLayoutEffect(() => {
+    if (pathname !== '/') {
+      window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+    }
+  }, [pathname])
+
+  return null
+}
+
+function SiteLayout({
+  children,
+  showNavbar = false,
+  showFooter = false,
+}: PropsWithChildren<{ showNavbar?: boolean; showFooter?: boolean }>) {
   return (
     <div className="dark relative min-h-screen overflow-x-clip bg-[#05070a] pb-20 text-slate-100 selection:bg-sky-500/30 selection:text-white md:pb-0">
       <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(circle_at_top,_rgba(59,130,246,0.12),_transparent_32%),radial-gradient(circle_at_bottom_right,_rgba(96,165,250,0.07),_transparent_28%)]" />
-      <Navbar />
+      {showNavbar ? <Navbar /> : null}
       <main className="relative">{children}</main>
-      <Footer />
+      {showFooter ? <Footer /> : null}
       <ScrollToTop />
     </div>
   )
@@ -26,7 +42,7 @@ function SiteLayout({ children }: PropsWithChildren) {
 
 function PortfolioPage() {
   return (
-    <SiteLayout>
+    <SiteLayout showNavbar showFooter>
       <HomeSection />
       <AboutSection />
       <SkillsSection />
@@ -72,12 +88,15 @@ function NotFoundPage() {
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<PortfolioPage />} />
-      <Route path="/documents/:id" element={<DocumentPage />} />
-      <Route path="/certificates/:id" element={<CertificatePage />} />
-      <Route path="*" element={<NotFoundPage />} />
-    </Routes>
+    <>
+      <ScrollSecondaryPagesToTop />
+      <Routes>
+        <Route path="/" element={<PortfolioPage />} />
+        <Route path="/documents/:id" element={<DocumentPage />} />
+        <Route path="/certificates/:id" element={<CertificatePage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
+    </>
   )
 }
 

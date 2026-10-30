@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import portfolioIcon from '../../assets/images/personal-information.png'
 
 const links = [
   { label: 'Home', href: '#home' },
@@ -11,7 +12,6 @@ const links = [
 
 export default function Navbar() {
   const [active, setActive] = useState('home')
-  const [progress, setProgress] = useState(0)
 
   useEffect(() => {
     const onScroll = () => {
@@ -30,8 +30,6 @@ export default function Navbar() {
       if (isAtPageBottom) currentSection = links[links.length - 1].href.slice(1)
 
       setActive(currentSection)
-      const max = document.documentElement.scrollHeight - window.innerHeight
-      setProgress(max > 0 ? (window.scrollY / max) * 100 : 0)
     }
     onScroll()
     window.addEventListener('scroll', onScroll)
@@ -63,9 +61,9 @@ export default function Navbar() {
   return (
     <>
       <header className="sticky top-0 z-50 border-b border-white/10 bg-[#080a0d]/85 backdrop-blur-xl">
-        <div className="h-1 bg-gradient-to-r from-sky-600 via-blue-400 to-slate-300 transition-all duration-200" style={{ width: `${progress}%` }} />
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
-          <a href="/#home" className="text-lg font-bold tracking-[0.12em] text-white">
+          <a href="/#home" className="inline-flex items-center gap-2 text-lg font-bold tracking-[0.12em] text-white">
+            <img src={portfolioIcon} alt="" aria-hidden="true" className="h-7 w-7 object-contain" />
             Portfolio
           </a>
 

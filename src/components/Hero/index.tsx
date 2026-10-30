@@ -1,4 +1,4 @@
-import ProfileImage from '../../assets/images/Profile_pic.png'
+import ProfileImage from '../../assets/images/Profile_photo.jpg'
 import cv from '../../assets/file/Aung_Myat_Min_CV.pdf'
 import { motion } from 'framer-motion'
 
@@ -35,13 +35,13 @@ export default function Hero() {
             href={cv}
             target="_blank"
             rel="noreferrer"
-            className="border border-slate-200 bg-slate-200 px-6 py-3 text-sm font-bold text-[#080a0d] shadow-[5px_5px_0_#64748b] transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-[3px_3px_0_#64748b]"
+            className="inline-flex items-center justify-center rounded-md border border-sky-600 bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-black/20 transition-all duration-200 hover:-translate-y-0.5 hover:border-sky-500 hover:bg-sky-500 hover:shadow-[0_0_28px_rgba(96,165,250,0.45)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-400"
           >
-            View CV
+            VIEW CV
           </a>
           <a
             href="#contact"
-            className="border border-slate-500 px-6 py-3 text-sm font-bold text-slate-200 transition-colors hover:bg-slate-800"
+            className="rounded-md border border-slate-500 px-6 py-3 text-sm font-bold text-slate-200 transition-colors hover:bg-slate-800"
           >
             Contact Me
           </a>
@@ -52,14 +52,15 @@ export default function Hero() {
         initial={{ opacity: 0, x: 24 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.2, duration: 0.7 }}
-        className="relative order-2 mx-auto h-64 w-64 sm:h-80 sm:w-80 md:order-2 md:h-[28rem] md:w-full"
+        className="relative order-2 mx-auto aspect-[768/1309] w-[13rem] sm:w-[15rem] md:order-2 md:w-[18rem]"
       >
-        <div className="absolute inset-0 rounded-full bg-slate-400/10 blur-3xl" />
-        <img
-          src={ProfileImage}
-          alt="Aung Myat Min"
-          className="relative h-full w-full rounded-[2rem] object-cover object-center shadow-[0_0_50px_rgba(148,163,184,0.12)] md:rounded-[3rem]"
-        />
+        <div className="relative h-full w-full">
+          <img
+            src={ProfileImage}
+            alt="Aung Myat Min"
+            className="h-full w-full object-contain object-center shadow-[0_0_18px_rgba(148,163,184,0.28)]"
+          />
+        </div>
       </motion.div>
     </section>
   )
